@@ -1,4 +1,5 @@
 import { DmpEvidence } from './DmpEvidence.jsx'
+import { MetadataEvidence } from './MetadataEvidence.jsx'
 
 function ProjectDetail({ label, children }) {
   if (!children) return null
@@ -45,6 +46,10 @@ export function ProjectArticle({ project }) {
 
         {project.evidence?.type === 'dmp-summary' && (
           <DmpEvidence evidence={project.evidence} projectId={project.id} />
+        )}
+
+        {project.evidence?.type === 'metadata-anatomy' && (
+          <MetadataEvidence evidence={project.evidence} projectId={project.id} />
         )}
 
         {project.media && (

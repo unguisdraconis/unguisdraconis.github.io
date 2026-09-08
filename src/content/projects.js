@@ -147,7 +147,7 @@ export const projects = [
     year: '2025',
     context: 'Academic geospatial metadata project',
     summary:
-      'An academic geospatial-metadata project describing a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. The work adapted USGS source metadata into an FGDC CSDGM-structured XML record, added selected descriptive metadata, and documented review decisions.',
+      'An academic geospatial-metadata project describing a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. The work adapted USGS source metadata into an FGDC CSDGM-structured XML record, added selected descriptive metadata, and documented review decisions. It did not involve LiDAR acquisition, processing, or advanced GIS analysis.',
     challenge:
       'Represent a complex federal scientific resource in structured metadata while preserving source provenance and distinguishing inherited facts from added descriptive choices.',
     role:
@@ -168,12 +168,133 @@ export const projects = [
       'USGS originated the LiDAR resource and much of its descriptive metadata; the academic record adapts that source material rather than claiming original authorship of every statement.',
       'The public evidence is a self-authored metadata-anatomy derivative. The original academic XML and report remain private.',
     ],
+    accessibility: [
+      'The metadata-anatomy evidence uses semantic headings, an ordered section index, and labelled XML code blocks.',
+      'The source boundary, evidence path, and limitations are stated in text rather than communicated by color alone.',
+    ],
     limitations: [
       'Source metadata forms much of the record.',
       'Selected fields were reviewed, but no full schema-validation evidence is available.',
       'The supplied project sources do not document preservation or reuse planning.',
       'No LiDAR processing or advanced GIS analysis was performed.',
     ],
+    evidence: {
+      type: 'metadata-anatomy',
+      kicker: 'Portfolio evidence · Metadata structure',
+      title: 'USGS 3DEP Metadata Anatomy',
+      resource:
+        'USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. This academic exercise adapted source metadata into an FGDC CSDGM-structured XML record.',
+      boundary: 'Metadata/documentation work — not LiDAR processing or advanced GIS analysis.',
+      nodeCount: '194',
+      nodeCountLabel:
+        'total XML element nodes, including repeated and container elements, across seven top-level CSDGM sections',
+      uniqueCount: '117 unique element names',
+      sections: [
+        {
+          tag: 'idinfo',
+          name: 'Identification Information',
+          terms: ['citation', 'description', 'bounding extent', 'keywords', 'constraints'],
+        },
+        {
+          tag: 'dataqual',
+          name: 'Data Quality Information',
+          terms: [
+            'attribute accuracy fields',
+            'logical consistency field',
+            'completeness field',
+            'vertical accuracy field',
+            'minimal lineage/process step',
+          ],
+          note: 'CSDGM data-quality fields with source-derived quality statements',
+        },
+        {
+          tag: 'spdoinfo',
+          name: 'Spatial Data Organization Information',
+          terms: ['point representation'],
+        },
+        {
+          tag: 'spref',
+          name: 'Spatial Reference Information',
+          terms: ['horizontal reference', 'vertical reference'],
+        },
+        {
+          tag: 'eainfo',
+          name: 'Entity and Attribute Information',
+          terms: ['LAS specification overview'],
+        },
+        {
+          tag: 'distinfo',
+          name: 'Distribution Information',
+          terms: ['digital format', 'network access', 'fee'],
+        },
+        {
+          tag: 'metainfo',
+          name: 'Metadata Reference Information',
+          terms: ['standard name', 'standard version'],
+        },
+      ],
+      excerpts: [
+        {
+          title: 'Sanitized structural excerpt',
+          code: `<metadata>
+  <idinfo>…</idinfo>
+  <dataqual>…</dataqual>
+  <spdoinfo>…</spdoinfo>
+  <spref>…</spref>
+  <eainfo>…</eainfo>
+  <distinfo>…</distinfo>
+  <metainfo>…</metainfo>
+</metadata>`,
+        },
+        {
+          title: 'Bounding extent',
+          code: `<bounding>
+  <westbc>-67.946275</westbc>
+  <eastbc>-67.944831</eastbc>
+  <northbc>18.084241</northbc>
+  <southbc>18.080595</southbc>
+</bounding>`,
+        },
+        {
+          title: 'Reference-system fields',
+          code: `<geodetic>
+  <horizdn>NAD83_National_Spatial_Reference_System_2011</horizdn>
+  <ellips>GRS1980</ellips>
+</geodetic>
+<altdatum>Puerto Rico Vertical Datum of 2002</altdatum>
+<altunits>meters</altunits>`,
+        },
+      ],
+      decisions: [
+        'Added specific place keywords for Puerto Rico, Punta Arenas, and Playa Punta Arenas',
+        'Consulted FGDC guidance when reviewing a spatial-reference warning',
+        'Revised a related XML reference after review',
+      ],
+      representationNotes: [
+        'Access and use constraints are represented without reproducing source boilerplate',
+        'Digital format and online network access are represented; no fee is listed',
+        'Source-derived quality statements are identified as metadata content, not accuracy testing',
+      ],
+      evidencePath: [
+        'USGS source context',
+        'Adapt source metadata',
+        'Add / refine descriptive fields',
+        'Review selected fields against FGDC guidance',
+        'Document access and distribution',
+      ],
+      evidencePathNote:
+        'This is an evidence path, not a data lifecycle. The supplied sources do not document preservation or reuse planning.',
+      limitations: [
+        'Source metadata forms much of the record',
+        'Selected fields were reviewed, but no full schema-validation evidence is available',
+        'The supplied project sources do not document preservation or reuse planning',
+        'No LiDAR processing or advanced GIS analysis was performed',
+      ],
+      provenance:
+        'Portfolio derivative based on Jeremiah King’s 2025 academic metadata record and accompanying rationale report. Most descriptive content was adapted from USGS source metadata, and the record was created with the USGS Metadata Wizard. Original academic files remain private.',
+      caption:
+        'This metadata-anatomy figure summarizes a 2025 academic XML record for a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. It shows seven FGDC CSDGM sections and the path from USGS source context through metadata adaptation, selected field review, and distribution description. The project demonstrates metadata and curation practice rather than LiDAR processing or advanced GIS analysis.',
+    },
   },
   {
     id: 'bibliographic-reconciliation',
