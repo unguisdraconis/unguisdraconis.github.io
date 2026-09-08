@@ -331,7 +331,7 @@ export const projects = [
     summary:
       'A 2024 academic SQLite prototype for multilingual book-recommendation data, with 26 user-defined tables spanning core entities, composite-key junctions, and imported reference data.',
     challenge:
-      'Translate 16 intended business rules into a relational design for multilingual books and related entities; the surviving schema does not implement every documented rule.',
+      'Documented 16 intended business rules and implemented the prototype’s principal entity and junction relationships; the surviving schema does not implement every documented relationship.',
     role:
       'Implemented and documented the prototype, modeled its principal relationships through composite-key junctions, integrated credited reference data, and created an ER model.',
     approach:
@@ -358,6 +358,10 @@ export const projects = [
       'The report credits an external source and states that the reference data were used with permission, but public redistribution rights were not independently established. The private database, report, ER diagram, imported rows, and source URL remain unpublished.',
       'No assignment prompt or starter schema was supplied, so the available evidence does not support claiming that every aspect of the design originated from scratch.',
     ],
+    accessibility: [
+      'The public architecture derivative presents relationships as ordered text paths as well as visual groupings.',
+      'Counts, evidence boundaries, and the integrity result remain available in the figure’s logical reading order and do not depend on color or hover.',
+    ],
     limitations: [
       'This is an academic prototype with seven BOOK rows, not a production library system.',
       'The 80,381 imported rows are language and country reference or lookup data, not a book catalog.',
@@ -366,6 +370,68 @@ export const projects = [
       'The original report’s permission statement was not independently verified as a basis for public redistribution.',
       'A current PRAGMA foreign_key_check returned zero rows, but foreign-key enforcement in the original connection was connection-specific and cannot be established from that result.',
     ],
+    evidence: {
+      type: 'database-architecture',
+      kicker: 'Portfolio evidence · Relational architecture',
+      title: 'Multilingual Library Database Architecture',
+      framing:
+        '2024 academic SQLite prototype for multilingual book-recommendation data. The implemented structure demonstrates relational modeling and reference-data integration—not a production catalog or recommendation system.',
+      metrics: [
+        { value: '26', label: 'user-defined tables' },
+        { value: '10', label: 'core / domain tables' },
+        { value: '13', label: 'junction tables' },
+        { value: '3', label: 'reference tables' },
+        { value: '27', label: 'declared foreign keys' },
+        { value: '9', label: 'explicit user-created indexes' },
+      ],
+      centralEntity: {
+        name: 'BOOK',
+        count: '7 rows',
+        note: 'Central domain entity · test-scale academic data',
+      },
+      bookRelationships: [
+        { junction: 'BOOK_AUTHOR', entity: 'AUTHOR' },
+        { junction: 'BOOK_PUBLISHER', entity: 'PUBLISHER' },
+        { junction: 'BOOK_LANGUAGE', entity: 'LANGUAGE_CODES' },
+        { junction: 'BOOK_GENRE', entity: 'GENRE' },
+        { junction: 'BOOK_REVIEW', entity: 'REVIEW' },
+        { junction: 'BOOK_AWARD', entity: 'AWARD' },
+        { junction: 'BOOK_BOOKLIST', entity: 'BOOKLIST' },
+        { junction: 'BOOK_SERIES', entity: 'SERIES' },
+        { junction: 'BOOK_ISBN', entity: 'ISBN' },
+        { junction: 'BOOK_VENDOR', entity: 'VENDOR' },
+      ],
+      additionalRelationships: [
+        { source: 'AUTHOR', junction: 'AUTHOR_COUNTRY', target: 'COUNTRY_CODES' },
+        { source: 'AUTHOR', junction: 'AUTHOR_REVIEW', target: 'REVIEW' },
+        { source: 'PUBLISHER', junction: 'PUBLISHER_COUNTRY', target: 'COUNTRY_CODES' },
+      ],
+      referenceData: [
+        { name: 'Language_Index', rows: '72,524' },
+        { name: 'LANGUAGE_CODES', rows: '7,614' },
+        { name: 'COUNTRY_CODES', rows: '243' },
+      ],
+      referenceTotal: '80,381',
+      referenceBoundary: 'Reference / lookup rows—not books.',
+      referenceRelationship: 'LANGUAGE_CODES declares a foreign key to COUNTRY_CODES.',
+      integrity: {
+        label: 'Current read-only integrity audit',
+        code: 'PRAGMA foreign_key_check;\n→ 0 rows returned',
+        note: 'SQLite foreign-key enforcement is connection-specific, so this result does not establish how every original project session was configured.',
+      },
+      rules:
+        'The project report documents 16 intended business rules; the implemented database captures the principal entity and junction relationships, but not every documented relationship.',
+      implementationGap:
+        'Two documented language relationships are absent from the implemented SQLite schema.',
+      aiBoundary:
+        'The report documents AI-assisted test-record generation and acknowledges inaccuracies in some sample data. This public artifact therefore uses schema structure and audited counts—not test bibliographic records—as evidence.',
+      provenance:
+        'The academic report credits the imported language and country reference tables to an external source and states they were used with permission. Public redistribution rights were not independently established, so this portfolio derivative shows only schema-level counts and structure.',
+      evidenceBasis:
+        'Self-authored portfolio architecture derivative based on the verified SQLite structure and a current read-only schema audit.',
+      caption:
+        'This architecture summary presents a 2024 academic SQLite prototype for multilingual book-recommendation data. The implemented schema contains 26 user-defined tables, including junction tables connecting books with authors, publishers, languages, genres, and other entities. Three imported reference tables contain 80,381 language-name, language-code, and country-code rows; that figure does not represent books. A current read-only audit returned no foreign-key violations. The prototype is not a production library system.',
+    },
   },
   {
     id: 'talent-migration-r',

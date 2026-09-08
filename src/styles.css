@@ -988,6 +988,384 @@ dd {
   line-height: 1.5;
 }
 
+.database-evidence-figure {
+  width: min(100%, 52.5rem);
+  margin-inline: auto;
+  margin-bottom: clamp(2.25rem, 4vw, 3.5rem);
+}
+
+.database-sheet {
+  overflow: hidden;
+  border: 1px solid var(--rule-strong);
+  border-top: 0.28rem solid var(--copper);
+  background: var(--paper-raised);
+}
+
+.database-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(18rem, 1.15fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.1rem, 2.3vw, 1.65rem);
+}
+
+.database-kicker,
+.database-central-entity > p {
+  margin-bottom: 0.45rem;
+  color: var(--copper-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.database-masthead h4 {
+  max-width: 13ch;
+  margin-bottom: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.3vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.database-framing {
+  align-self: end;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--moss);
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.database-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+  background: var(--paper-deep);
+}
+
+.database-metrics > div {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0.65rem clamp(0.7rem, 1.7vw, 1rem);
+  border-bottom: 1px solid var(--rule);
+}
+
+.database-metrics > div:not(:nth-child(3n + 1)) {
+  border-left: 1px solid var(--rule);
+}
+
+.database-metrics > div:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+.database-metrics dt {
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.database-metrics dd {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  color: var(--copper-dark);
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.database-model,
+.database-additional,
+.database-reference,
+.database-audit-grid > section,
+.database-boundaries {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.4rem) clamp(1.1rem, 2.3vw, 1.65rem);
+  border-top: 1px solid var(--rule);
+}
+
+.database-model {
+  border-top: 0;
+}
+
+.database-heading {
+  margin-bottom: 0.65rem;
+  color: var(--slate);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.database-model-grid {
+  display: grid;
+  grid-template-columns: minmax(10.5rem, 0.36fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.database-central-entity {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid var(--rule-strong);
+  border-left: 0.28rem solid var(--copper);
+  background: var(--paper-deep);
+}
+
+.database-central-entity code {
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.database-central-entity strong {
+  margin-top: 0.7rem;
+  color: var(--moss);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.database-central-entity span {
+  margin-top: 0.2rem;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.database-book-relationships,
+.database-additional ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  list-style: none;
+}
+
+.database-book-relationships li,
+.database-additional li {
+  min-width: 0;
+  padding: 0.48rem 0.55rem 0.48rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.database-book-relationships li:nth-child(even),
+.database-additional li:not(:first-child) {
+  padding-right: 0;
+  padding-left: 0.55rem;
+  border-left: 1px solid var(--rule);
+}
+
+.database-relationship-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.35rem;
+  margin: 0;
+  color: var(--moss);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.database-relationship-path code {
+  max-width: 100%;
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.database-additional ul {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.database-additional li {
+  padding-block: 0.55rem;
+}
+
+.database-reference {
+  background: var(--paper-deep);
+}
+
+.database-reference-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.database-reference-heading > p {
+  margin-bottom: 0.65rem;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  text-align: right;
+}
+
+.database-reference-heading strong {
+  color: var(--copper-dark);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.database-reference-heading span {
+  display: block;
+  color: var(--moss);
+  font-weight: 750;
+}
+
+.database-reference-counts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.database-reference-counts > div {
+  min-width: 0;
+  padding: 0.6rem 0.7rem;
+}
+
+.database-reference-counts > div + div {
+  border-left: 1px solid var(--rule);
+}
+
+.database-reference-counts dt,
+.database-reference-counts dd {
+  margin: 0;
+}
+
+.database-reference-counts code {
+  font-size: 0.76rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.database-reference-counts dd {
+  margin-top: 0.25rem;
+  color: var(--ink-soft);
+  font-size: 0.75rem;
+}
+
+.database-reference-note,
+.database-audit-grid p,
+.database-boundaries p {
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.database-reference-note {
+  margin: 0.55rem 0 0;
+}
+
+.database-audit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.database-audit-grid > section + section {
+  border-left: 1px solid var(--rule);
+}
+
+.database-audit-grid p {
+  margin: 0.55rem 0 0;
+}
+
+.database-integrity-code {
+  margin: 0;
+  padding: 0.75rem;
+  border-left: 0.22rem solid var(--slate);
+  background: var(--ink);
+  color: var(--paper-raised);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.database-audit-grid .database-gap-note {
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--rule);
+  color: var(--copper-dark);
+  font-weight: 700;
+}
+
+.database-boundaries {
+  background: rgba(231, 223, 210, 0.45);
+}
+
+.database-boundaries > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.database-boundaries section + section {
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--rule);
+}
+
+.database-boundaries h6 {
+  margin: 0 0 0.35rem;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.database-boundaries p {
+  margin: 0;
+}
+
+.database-evidence-basis {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 0.9rem;
+  padding: 0.7rem clamp(1.1rem, 2.3vw, 1.65rem);
+  border-top: 1px solid var(--rule-strong);
+  background: var(--paper-deep);
+}
+
+.database-evidence-basis > span,
+.database-evidence-basis p {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.database-evidence-basis > span {
+  color: var(--copper-dark);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.database-evidence-basis p {
+  color: var(--ink-soft);
+}
+
+.database-evidence-figure > figcaption {
+  margin-top: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
 .project-figure {
   margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
@@ -1274,6 +1652,52 @@ dd {
     width: 100%;
   }
 
+  .database-evidence-figure {
+    width: 100%;
+  }
+
+  .database-masthead,
+  .database-model-grid,
+  .database-audit-grid,
+  .database-boundaries > div {
+    grid-template-columns: 1fr;
+  }
+
+  .database-masthead {
+    gap: 0.9rem;
+  }
+
+  .database-book-relationships {
+    grid-template-columns: 1fr;
+  }
+
+  .database-book-relationships li,
+  .database-book-relationships li:nth-child(even) {
+    padding-inline: 0;
+    border-left: 0;
+  }
+
+  .database-additional ul {
+    grid-template-columns: 1fr;
+  }
+
+  .database-additional li,
+  .database-additional li:not(:first-child) {
+    padding-inline: 0;
+    border-left: 0;
+  }
+
+  .database-audit-grid > section + section {
+    border-left: 0;
+  }
+
+  .database-boundaries section + section {
+    margin-top: 0.9rem;
+    padding: 0.9rem 0 0;
+    border-top: 1px solid var(--rule);
+    border-left: 0;
+  }
+
   .metadata-section {
     padding: 0.9rem 1.1rem;
   }
@@ -1533,6 +1957,58 @@ dd {
   .metadata-provenance {
     grid-template-columns: 1fr;
     gap: 0.25rem;
+  }
+
+  .database-masthead,
+  .database-model,
+  .database-additional,
+  .database-reference,
+  .database-audit-grid > section,
+  .database-boundaries {
+    padding: 1.1rem;
+  }
+
+  .database-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .database-metrics > div,
+  .database-metrics > div:not(:nth-child(3n + 1)) {
+    border-bottom: 1px solid var(--rule);
+    border-left: 0;
+  }
+
+  .database-metrics > div:nth-child(even) {
+    border-left: 1px solid var(--rule);
+  }
+
+  .database-metrics > div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .database-reference-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .database-reference-heading > p {
+    text-align: left;
+  }
+
+  .database-reference-counts {
+    grid-template-columns: 1fr;
+  }
+
+  .database-reference-counts > div + div {
+    border-top: 1px solid var(--rule);
+    border-left: 0;
+  }
+
+  .database-evidence-basis {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.8rem 1.1rem;
   }
 }
 
