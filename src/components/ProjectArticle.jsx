@@ -1,3 +1,5 @@
+import { DmpEvidence } from './DmpEvidence.jsx'
+
 function ProjectDetail({ label, children }) {
   if (!children) return null
 
@@ -40,6 +42,10 @@ export function ProjectArticle({ project }) {
         </header>
 
         <p className="project-summary">{project.summary}</p>
+
+        {project.evidence?.type === 'dmp-summary' && (
+          <DmpEvidence evidence={project.evidence} projectId={project.id} />
+        )}
 
         {project.media && (
           <figure className="project-figure">

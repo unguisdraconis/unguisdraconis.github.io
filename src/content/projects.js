@@ -26,9 +26,119 @@ export const projects = [
       'Machine-readable DMP Roadmap JSON',
       'Evaluation of USDA Ag Data Commons as the primary intended repository and Zenodo as a fallback',
     ],
+    provenance: [
+      'The public evidence is a self-authored derivative based on a private narrative DMP and DMP Roadmap JSON; the source exports remain private.',
+      'Lifecycle detail is derived primarily from the narrative plan. The sanitized JSON excerpt demonstrates machine-readable structure rather than the complete set of lifecycle decisions.',
+    ],
+    accessibility: [
+      'The evidence summary uses semantic headings, a real data table, an ordered lifecycle, and a labelled code block.',
+      'Planning status and repository roles are stated in text rather than communicated by color alone.',
+    ],
     limitations: [
       'The plan concerns a proposed study; it does not report a completed study or research findings.',
+      'The repository comparison reflects the academic plan’s analysis rather than a current policy audit, and repository acceptance was not assumed.',
     ],
+    evidence: {
+      type: 'dmp-summary',
+      kicker: 'Portfolio evidence · Public derivative',
+      title: 'Data stewardship plan at a glance',
+      scopeLabel: 'Proposed research context',
+      scope:
+        'Academic data management plan for a proposed study of AI use in small-scale agriculture. The plan models data stewardship decisions; the study was not conducted.',
+      outputs: [
+        {
+          name: 'Analyzed Data',
+          purpose: 'Cleaned, anonymized, analyzed tabular output',
+          stewardship: 'CSV/TSV; intended open sharing after anonymization',
+        },
+        {
+          name: 'Anonymized Data',
+          purpose: 'Cleaned and de-identified tabular research output',
+          stewardship: 'CSV/TSV; planned repository deposit',
+        },
+        {
+          name: 'Transcripts',
+          purpose: 'Anonymized text derived from proposed interviews',
+          stewardship: 'TXT; temporary source audio not retained',
+        },
+        {
+          name: 'Metadata',
+          purpose: 'Documentation of project, methods, questionnaire, and context',
+          stewardship: 'JSON; planned public documentation',
+        },
+      ],
+      lifecycle: [
+        {
+          step: 'Collect / acquire',
+          note: 'Consent planned before collection',
+        },
+        {
+          step: 'Document & quality-check',
+          note: 'Metadata and review incorporated',
+        },
+        {
+          step: 'Protect & store',
+          note: 'Identifiers separated; access and backups planned',
+        },
+        {
+          step: 'Share approved outputs',
+          note: 'Open sharing limited to approved anonymized outputs',
+        },
+        {
+          step: 'Preserve in repository',
+          note: 'Deposit planned for discovery and preservation',
+        },
+      ],
+      jsonExcerpt: `{
+  "dmp": {
+    "dataset": [
+      { "type": "dataset", "title": "Analyzed Data" },
+      { "type": "dataset", "title": "Anonymized Data" },
+      { "type": "text", "title": "Transcripts" },
+      { "type": "text", "title": "Metadata" }
+    ]
+  }
+}`,
+      repositories: [
+        {
+          name: 'USDA Ag Data Commons',
+          role: 'Primary intended repository',
+          considerations: [
+            'Domain-specific agricultural fit',
+            'Intended open access and discovery',
+            'DOI anticipated',
+            'Deposit preparation considered',
+            'No storage cost anticipated',
+            'Acceptance was not assumed',
+          ],
+        },
+        {
+          name: 'Zenodo',
+          role: 'Generalist fallback',
+          considerations: [
+            'General-purpose repository',
+            'Intended open access and discovery',
+            'DOI anticipated',
+            'Deposit preparation considered',
+            'No storage cost anticipated',
+          ],
+        },
+      ],
+      repositoryNote:
+        'Repository evaluation reflects the academic plan’s analysis, not a current policy audit.',
+      stewardship: [
+        'Consent and reuse expectations planned before collection',
+        'Identifiers separated from research data',
+        'Documentation and quality review incorporated into the workflow',
+        'Access and backups planned according to sensitivity',
+        'Public sharing limited to approved anonymized outputs',
+        'Repository deposit planned for discovery and preservation',
+      ],
+      provenance:
+        'Portfolio derivative based on a 2026 academic DMP created with DMP Tool using a Digital Curation Centre template. Original source artifacts are retained privately.',
+      caption:
+        'This summary distills an academic plan for a proposed study of AI use in small-scale agriculture. It connects four planned research outputs with lifecycle decisions, a sanitized DMP Roadmap JSON excerpt, and repository evaluation; the study was not conducted and produced no findings.',
+    },
   },
   {
     id: 'usgs-lidar-metadata',
