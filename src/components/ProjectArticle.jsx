@@ -73,7 +73,7 @@ export function ProjectArticle({ project }) {
         {project.links?.length > 0 && (
           <div className="project-links" aria-label={`${project.title} links`}>
             {project.links.map((link) => (
-              <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+              <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">
                 {link.label} <span aria-hidden="true">↗</span>
               </a>
             ))}
@@ -83,4 +83,3 @@ export function ProjectArticle({ project }) {
     </article>
   )
 }
-

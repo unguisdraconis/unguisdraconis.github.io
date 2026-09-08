@@ -3,7 +3,11 @@ export const education = [
     institution: 'University of Tennessee, Knoxville',
     credential: 'Master of Science in Information Sciences',
     year: '2026',
-    details: ['Graduate Certificate in Research Data Management', 'Graduate GPA: 4.00/4.00', 'Non-thesis program'],
+    details: [
+      'Graduate Certificate in Research Data Management — 2026',
+      'Graduate GPA: 4.00/4.00',
+      'Non-thesis program',
+    ],
   },
   {
     institution: 'University of Tennessee, Knoxville',
@@ -44,4 +48,3 @@ export const professionalDevelopment = [
     status: 'In progress',
   },
 ]
-
