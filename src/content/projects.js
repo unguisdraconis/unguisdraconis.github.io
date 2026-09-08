@@ -8,13 +8,13 @@ export const projects = [
     year: '2026',
     context: 'Academic research-data-management project',
     summary:
-      'A full-lifecycle plan for a proposed study of AI use in small-scale agriculture, expressed as narrative documentation and machine-readable DMP Roadmap JSON.',
+      'An academic data management plan for a proposed study of AI use in small-scale agriculture. The work models how research data would be collected, documented, protected, shared, and preserved; the study was not conducted and no research findings are reported.',
     challenge:
-      'Plan how four datasets would be collected, documented, protected, stored, shared, retained, and preserved before the proposed research began.',
+      'Define four planned research outputs and document prospective stewardship decisions before the proposed research began.',
     role:
-      'Developed the data management plan, machine-readable representation, and repository evaluation for the proposed study.',
+      'Developed the narrative data management plan, a DMP Roadmap JSON representation, and a repository evaluation for the proposed study.',
     approach:
-      'Defined four datasets and addressed formats, documentation, quality assurance, ethics, anonymization, permissions, storage, backup, sharing, responsibilities, costs, retention, and preservation across the data lifecycle.',
+      'The narrative plan addresses collection, formats, documentation, quality assurance, ethics, anonymization, permissions, storage, backup, sharing, responsibilities, costs, retention, and preservation. The JSON represents project structure, planned outputs, distribution, access, licensing, and metadata-related fields.',
     methods: [
       'Data management planning',
       'DMP Roadmap JSON',
@@ -24,7 +24,7 @@ export const projects = [
     deliverables: [
       'Narrative data management plan',
       'Machine-readable DMP Roadmap JSON',
-      'Evaluation of USDA Ag Data Commons and Zenodo',
+      'Evaluation of USDA Ag Data Commons as the primary intended repository and Zenodo as a fallback',
     ],
     limitations: [
       'The plan concerns a proposed study; it does not report a completed study or research findings.',
@@ -199,4 +199,3 @@ export const projects = [
     },
   },
 ]
-
