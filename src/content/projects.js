@@ -329,29 +329,42 @@ export const projects = [
     year: '2024',
     context: 'Academic database prototype',
     summary:
-      'A normalized 26-table SQLite prototype translating library requirements into a documented relational structure for multilingual book information.',
+      'A 2024 academic SQLite prototype for multilingual book-recommendation data, with 26 user-defined tables spanning core entities, composite-key junctions, and imported reference data.',
     challenge:
-      'Translate more than 15 business rules into a relational design that could represent multilingual books and their related entities consistently.',
+      'Translate 16 intended business rules into a relational design for multilingual books and related entities; the surviving schema does not implement every documented rule.',
     role:
-      'Designed and implemented the prototype, documented its structure, and checked referential integrity.',
+      'Implemented and documented the prototype, modeled its principal relationships through composite-key junctions, integrated credited reference data, and created an ER model.',
     approach:
-      'Combined entity, associative, and reference tables with indexes and foreign-key relationships, supported by detailed and simplified crow’s-foot ER diagrams.',
+      'Combined 10 core tables, 13 junction tables, and three reference tables using primary keys, 27 declared foreign keys, and nine explicit user-created indexes. The structure demonstrates relational modeling and reference-data integration rather than a production system.',
     methods: [
-      'Relational modeling',
-      'Normalization',
       'SQLite',
-      'Foreign-key and referential-integrity checks',
-      'Crow’s-foot ER modeling',
+      'SQL',
+      'Relational modeling',
+      'Composite-key junctions',
+      'Primary and foreign keys',
+      'Controlled and reference data',
+      'ER modeling',
     ],
     deliverables: [
-      'Normalized 26-table SQLite prototype',
-      'Detailed and simplified ER diagrams',
+      'SQLite academic prototype',
+      'ER model and design documentation',
     ],
     result:
-      'Integrated more than 80,000 language and country reference records and completed referential-integrity checks.',
+      'A current read-only schema audit found 26 user-defined tables, 27 declared foreign keys, nine explicit user-created indexes, and zero rows returned by PRAGMA foreign_key_check.',
+    aiAssistance:
+      'Some test records were created with AI assistance and acknowledged in the source report as inaccurate. This public case study uses schema and count evidence only and excludes those records.',
+    provenance: [
+      'Three imported reference tables contain 80,381 language and country lookup rows: Language_Index (72,524), LANGUAGE_CODES (7,614), and COUNTRY_CODES (243). These are reference data, not books; the BOOK table contains seven rows.',
+      'The report credits an external source and states that the reference data were used with permission, but public redistribution rights were not independently established. The private database, report, ER diagram, imported rows, and source URL remain unpublished.',
+      'No assignment prompt or starter schema was supplied, so the available evidence does not support claiming that every aspect of the design originated from scratch.',
+    ],
     limitations: [
-      'The 80,000-plus figure refers primarily to reference and lookup data, not books.',
-      'The work is an academic prototype rather than a production library system.',
+      'This is an academic prototype with seven BOOK rows, not a production library system.',
+      'The 80,381 imported rows are language and country reference or lookup data, not a book catalog.',
+      'The surviving schema does not implement every one of the 16 intended business rules.',
+      'Some AI-assisted test records were acknowledged as inaccurate and are excluded from the public evidence.',
+      'The original report’s permission statement was not independently verified as a basis for public redistribution.',
+      'A current PRAGMA foreign_key_check returned zero rows, but foreign-key enforcement in the original connection was connection-specific and cannot be established from that result.',
     ],
   },
   {
