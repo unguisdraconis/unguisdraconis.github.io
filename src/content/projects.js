@@ -143,24 +143,36 @@ export const projects = [
   {
     id: 'usgs-lidar-metadata',
     number: '02',
-    title: 'USGS 3DEP LiDAR Metadata and Lifecycle',
+    title: 'USGS 3DEP LiDAR Metadata Record',
     year: '2025',
-    context: 'Academic metadata and lifecycle project',
+    context: 'Academic geospatial metadata project',
     summary:
-      'A detailed metadata record and lifecycle analysis for USGS 3DEP LiDAR material, connecting description and quality review with long-term stewardship concerns.',
+      'An academic geospatial-metadata project describing a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. The work adapted USGS source metadata into an FGDC CSDGM-structured XML record, added selected descriptive metadata, and documented review decisions.',
     challenge:
-      'Document a complex geospatial resource so that its extent, reference system, lineage, constraints, quality, distribution, and stewardship context remained interpretable.',
+      'Represent a complex federal scientific resource in structured metadata while preserving source provenance and distinguishing inherited facts from added descriptive choices.',
     role:
-      'Created and quality-checked the metadata record and traced the data lifecycle from acquisition through preservation and reuse.',
+      'Selected the tile, adapted USGS source metadata with the USGS Metadata Wizard, added specific place keywords, reviewed selected fields against FGDC guidance, and documented the rationale.',
     approach:
-      'Authored a 194-element FGDC CSDGM XML record covering geographic extent, spatial reference, lineage, data quality, constraints, distribution, and contacts, then documented lifecycle stages and responsibilities.',
-    methods: ['FGDC CSDGM', 'XML', 'Metadata quality review', 'Lifecycle analysis'],
+      'The XML record contains 194 total element nodes, including repeated and container elements, across seven top-level CSDGM sections. It represents geographic bounding extent, horizontal and vertical reference fields, source-derived data-quality fields, access and use constraints, and distribution information.',
+    methods: [
+      'FGDC CSDGM',
+      'XML',
+      'USGS Metadata Wizard',
+      'Place-name thesauri and controlled keywords',
+    ],
     deliverables: [
-      '194-element FGDC CSDGM XML metadata record',
-      'Data lifecycle documentation',
+      'FGDC CSDGM-structured XML metadata record',
+      'Metadata rationale report',
+    ],
+    provenance: [
+      'USGS originated the LiDAR resource and much of its descriptive metadata; the academic record adapts that source material rather than claiming original authorship of every statement.',
+      'The public evidence is a self-authored metadata-anatomy derivative. The original academic XML and report remain private.',
     ],
     limitations: [
-      'This academic metadata and lifecycle project does not represent advanced GIS analysis.',
+      'Source metadata forms much of the record.',
+      'Selected fields were reviewed, but no full schema-validation evidence is available.',
+      'The supplied project sources do not document preservation or reuse planning.',
+      'No LiDAR processing or advanced GIS analysis was performed.',
     ],
   },
   {
