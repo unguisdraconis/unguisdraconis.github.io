@@ -37,7 +37,7 @@ Do not run automatic dependency-fix commands as part of routine validation.
 
 ## Architecture
 
-- `src/content/` contains public, evidence-reviewed profile, project, capability, education, experience, presentation, and service records.
+- `src/content/` contains public, evidence-reviewed profile, project, study, capability, education, experience, presentation, and service records.
 - `src/components/` contains semantic presentation components.
 - `src/assets/projects/` contains optimized portfolio media derived from verified project sources.
 - `src/styles.css` contains the design tokens, editorial layout, responsive behavior, focus treatment, and reduced-motion handling.

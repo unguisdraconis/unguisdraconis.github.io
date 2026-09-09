@@ -2174,6 +2174,131 @@ dd {
   font-weight: 750;
 }
 
+.learning-studies {
+  padding-block: clamp(3.75rem, 7vw, 6rem);
+}
+
+.studies-heading,
+.study-list {
+  margin-left: calc(0.32 * min(100%, var(--content)));
+}
+
+.studies-heading {
+  max-width: 52rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.studies-kicker,
+.study-entry-heading > p,
+.study-notes dt {
+  color: var(--copper-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.studies-kicker {
+  margin-bottom: 0.55rem;
+}
+
+.studies-heading h2 {
+  max-width: 18ch;
+  margin-bottom: 0.8rem;
+  font-family: var(--serif);
+  font-size: clamp(2.25rem, 4.5vw, 3.8rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.studies-heading > p:last-child {
+  max-width: 60ch;
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: 1rem;
+}
+
+.study-list {
+  border-top: 1px solid var(--rule-strong);
+}
+
+.study-entry {
+  display: grid;
+  grid-template-columns: minmax(10.5rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  padding-block: clamp(1.5rem, 3vw, 2.25rem);
+  border-bottom: 1px solid var(--rule);
+}
+
+.study-entry-heading,
+.study-entry-body {
+  min-width: 0;
+}
+
+.study-entry-heading > p {
+  margin-bottom: 0.5rem;
+  line-height: 1.45;
+}
+
+.study-entry h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.study-summary {
+  max-width: 62ch;
+  margin-bottom: 1rem;
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.study-notes {
+  margin: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.study-notes > div {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding-block: 0.65rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.study-notes dt,
+.study-notes dd {
+  margin: 0;
+}
+
+.study-notes dt {
+  padding-top: 0.08rem;
+  line-height: 1.45;
+}
+
+.study-notes dd {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.study-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.study-links a {
+  font-size: 0.88rem;
+  font-weight: 750;
+}
+
 .capability-grid,
 .background-grid {
   display: grid;
@@ -2701,9 +2826,16 @@ dd {
 
   .capability-grid,
   .background-grid,
-  .experience-list {
+  .experience-list,
+  .studies-heading,
+  .study-list {
     grid-template-columns: 1fr;
     margin-left: 4.25rem;
+  }
+
+  .study-entry {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
   .capability-group,
@@ -2751,8 +2883,15 @@ dd {
 
   .capability-grid,
   .background-grid,
-  .experience-list {
+  .experience-list,
+  .studies-heading,
+  .study-list {
     margin-left: 3.15rem;
+  }
+
+  .study-notes > div {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
   }
 
   .hero-statement {
