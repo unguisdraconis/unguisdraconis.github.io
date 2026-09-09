@@ -1,9 +1,10 @@
 export const presentations = [
   {
-    type: 'Poster presentation',
-    title: 'Building non-English-language collections in small and rural libraries',
-    venue: 'American Library Association conference, Philadelphia',
-    date: 'June 2025',
+    type: 'Official listing · Sole listed poster author/presenter',
+    title:
+      '1000 Libros: Small Libraries Serving Multilingual and Non-English-Speaking Populations (Poster 30)',
+    venue: 'ALA Annual Conference · Diversity Fair Poster Session · Philadelphia',
+    date: 'June 29, 2025',
   },
 ]
 
