@@ -8,7 +8,7 @@ export function SelectedWork({ projects }) {
         number="01"
         id="selected-work-title"
         title="Selected Work"
-        introduction="Six projects tracing a practice across stewardship planning, metadata, data quality, relational design, analysis, and accessible visualization."
+        introduction="Six projects connecting research-data planning, metadata, data quality, structured information, applied information-service practice, and accessible visualization."
       />
       <div className="project-list">
         {projects.map((project) => (
@@ -18,4 +18,3 @@ export function SelectedWork({ projects }) {
     </section>
   )
 }
-

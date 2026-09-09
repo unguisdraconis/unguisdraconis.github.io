@@ -141,8 +141,196 @@ export const projects = [
     },
   },
   {
-    id: 'usgs-lidar-metadata',
+    id: 'lcpl-spanish-language-collection',
     number: '02',
+    title: 'Building a Spanish-Language Collection at Lenoir City Public Library',
+    year: '2024',
+    context: 'Graduate practicum · Spring 2024',
+    summary:
+      'An applied public-library practicum that expanded an existing Spanish-language collection by connecting community-needs assessment, evidence-informed title research, collaborative acquisition, cataloging, discovery, and outreach.',
+    challenge:
+      'Expand access to Spanish-language and bilingual materials within the library’s existing collection, budget, cataloging workflows, and public discovery systems.',
+    role:
+      'Initiated and led the local practicum implementation, working with library staff, professional mentors, earlier course collaborators, and community members on selection, acquisition, cataloging, discovery, and outreach.',
+    approach:
+      'Combined public demographic information with direct community engagement; researched Spanish-language and bilingual materials; organized recommendations in a public LibGuide; worked with the library director on budget-constrained ordering; cataloged and processed materials in Atriuum under staff guidance; improved OPAC and website discovery; and initiated the 1000 Libros donation campaign.',
+    methods: [
+      'Community-needs assessment and direct engagement',
+      'Evidence-informed collection development',
+      'Spanish-language and bilingual title research',
+      'LibGuide recommendation design',
+      'Budget-constrained acquisitions',
+      'Atriuum cataloging and physical processing',
+      'OPAC and website discovery',
+      'Outreach planning and professional collaboration',
+    ],
+    deliverables: [
+      'Public collection-development LibGuide',
+      'Spanish-language and bilingual title recommendations',
+      'Collaborative ordering and collection processing',
+      'OPAC and website discovery improvements',
+      '1000 Libros donation campaign',
+    ],
+    result:
+      'The library director publicly estimated that close to 100 books were ordered through the collaborative project using a $1,000 library allocation. Public reporting later documented continued collection use and at least one post-practicum volunteer program; no quantified circulation increase or exact later collection total is claimed.',
+    provenance: [
+      'The public evidence is a self-authored derivative of the documented practicum process. The private evaluation and original poster remain unpublished.',
+      'Earlier collaborative graduate coursework informed the community analysis. The library director approved and funded institutional actions; library staff and retired librarians provided cataloging and processing guidance; professional mentors supplied resources and advice; and community members contributed needs information.',
+      'The approximate order count is attributed to the library director’s public estimate. It is neither an exact personal-selection count nor a later collection total.',
+      'Public LibGuide, conference, institutional, and local-news pages are linked rather than reproduced; third-party book covers, descriptions, article text, and photographs are excluded.',
+    ],
+    accessibility: [
+      'The evidence artifact presents the eight-stage process as a semantic ordered list whose meaning does not depend on arrows, color, or hover.',
+      'Metrics, implemented and planned outreach, collaboration boundaries, and later-activity boundaries are represented in text.',
+      'The text-first layout stacks without horizontal overflow at narrow viewport widths and retains logical keyboard and reading order.',
+    ],
+    limitations: [
+      '“Close to 100” is an approximate estimate reported publicly by the library director; purchasing was collaborative and institutional.',
+      'LibGuide recommendations, WorldCat link instances, ordered books, later donations, additional purchases, and later collection totals are not interchangeable.',
+      'No quantified circulation increase, exact later collection size, or completion of the 1,000-book campaign goal is claimed.',
+      'Post-practicum use and volunteer activity are later organizational developments, not all practicum deliverables or outcomes attributable solely to Jeremiah.',
+      'The community-needs work does not establish an official demographic rate, language proficiency, or a formal institutional collection-development policy.',
+    ],
+    links: [
+      {
+        label: 'Explore the LCPL collection LibGuide',
+        href: 'https://sis-utk.libguides.com/LCPL',
+      },
+      {
+        label: 'Review the 2025 ALA conference listing',
+        href: 'https://annual2025.eventscribe.net/index.asp?presTarget=2951524',
+      },
+      {
+        label: 'Read the UT CCI practicum profile',
+        href: 'https://cci.utk.edu/blog/2024/11/26/jeremiah-kings-making-the-world-into-his-classroom-through-practicum-at-the-lenior-city-library/',
+      },
+      {
+        label: 'Read the News-Herald collection report',
+        href: 'https://www.news-herald.net/news/lenoir-city-library-gets-spanish-language-collection-seeks-more-books/article_41990940-3b14-11ef-a92b-c7222feb436b.html',
+      },
+    ],
+    evidence: {
+      type: 'collection-development',
+      kicker: 'Portfolio evidence · Applied information-service practice',
+      title: 'From Community Need to Collection Access',
+      framing:
+        'Spring 2024 graduate practicum in an operating public library. The project expanded an existing collection through collaborative, staff-authorized work; post-practicum use and programming are identified as later developments.',
+      metrics: [
+        {
+          value: '$1,000',
+          label: 'Library acquisition allocation',
+        },
+        {
+          value: 'Close to 100',
+          label: 'Books ordered through the collaborative project',
+        },
+      ],
+      metricNote:
+        'Recommendation, ordering, and later collection totals overlap but are not interchangeable; no exact personal-selection or post-practicum growth total is claimed.',
+      process: [
+        {
+          title: 'Community need',
+          description:
+            'Combined public demographic information with direct community engagement to assess Spanish-language collection and service needs.',
+          note:
+            'The public derivative excludes informal population estimates and demographic speculation.',
+        },
+        {
+          title: 'Selection research',
+          description:
+            'Consulted REFORMA and professional recommendations, publisher and bookseller sources, award and bestseller lists, notable authors, and children’s, juvenile, and adult materials across bilingual works, translations, and original Spanish-language works.',
+          note:
+            'The research informed title recommendations; it was not a formal institutional collection-development policy.',
+        },
+        {
+          title: 'LibGuide recommendations',
+          description:
+            'Organized candidate titles and selection sources in a public LibGuide that served as a recommendation resource, visual advocacy tool, and secondary discovery resource.',
+          note: 'WorldCat link instances represent recommendations, not verified purchases.',
+        },
+        {
+          title: 'Budget & ordering',
+          description:
+            'Researched and organized title recommendations and worked with the library director to order close to 100 books through a $1,000 library allocation.',
+          note:
+            'The order count is the director’s approximate public estimate; purchasing was collaborative and institutional.',
+        },
+        {
+          title: 'Cataloging & processing',
+          description:
+            'Cataloged and processed materials in Atriuum under staff guidance, including item entry, bibliographic-record editing, barcode and spine-label generation, and physical processing.',
+        },
+        {
+          title: 'OPAC / website discovery',
+          description:
+            'Added collection-related content, improved connections among library web resources, worked with a localized OPAC interface, and made the collection easier to locate and promote online.',
+          note: 'This was information-access and discovery work, not a web-development project.',
+        },
+        {
+          title: '1000 Libros outreach',
+          description:
+            'Initiated a donation campaign intended to increase collection visibility and invite continued community support.',
+          note:
+            'Campaign initiation is distinct from planned radio, flyer, social-media, QR-analytics, and grant activity.',
+        },
+        {
+          title: 'Post-practicum use & activity',
+          description:
+            'Public reporting later documented continued collection use and at least one post-practicum volunteer program.',
+          note:
+            'Later organizational activity is not treated as a practicum deliverable or attributed solely to Jeremiah.',
+        },
+      ],
+      collaboration: [
+        {
+          title: 'Jeremiah',
+          items: [
+            'Initiated the practicum and led its local implementation',
+            'Conducted local research and title-recommendation work',
+            'Created the LibGuide and performed cataloging and discovery tasks',
+            'Developed the outreach approach',
+          ],
+        },
+        {
+          title: 'Library staff',
+          items: [
+            'Provided institutional approval and implementation authority',
+            'Allocated the budget and collaborated on ordering',
+            'Provided cataloging and processing instruction and guidance',
+          ],
+        },
+        {
+          title: 'Professional and community input',
+          items: [
+            'REFORMA mentor and professional resources informed selection',
+            'Earlier course collaborators informed the community analysis',
+            'Community members contributed needs information',
+          ],
+        },
+      ],
+      outreach: {
+        implemented: [
+          'Initiated the 1000 Libros donation campaign',
+          'Improved collection visibility through library discovery channels',
+          'Later public reporting documented the collection and campaign',
+        ],
+        planned: [
+          'Additional flyer, Spanish-language radio, social-media, and community-organization outreach',
+          'QR-code analytics',
+          'Grant applications beyond opportunity research',
+        ],
+      },
+      dissemination:
+        'The official 2025 ALA Diversity Fair program listed a poster drawing on the practicum’s lessons, with Jeremiah as the sole listed author/presenter. This derivative does not independently claim attendance or delivery.',
+      provenance:
+        'Self-authored portfolio process summary based on the documented Spring 2024 practicum and linked public evidence. Private evaluation material, the original poster, third-party images, and copyrighted article or LibGuide content are not reproduced.',
+      caption:
+        'This process summary traces a Spring 2024 graduate practicum that expanded an existing Spanish-language collection at Lenoir City Public Library. Community analysis and direct engagement informed title research, a public LibGuide, collaborative ordering, cataloging and processing, discovery improvements, and the 1000 Libros outreach campaign. The library director later estimated that close to 100 books were ordered through the project; later collection growth is not attributed solely to the practicum.',
+    },
+  },
+  {
+    id: 'usgs-lidar-metadata',
+    number: '03',
     title: 'USGS 3DEP LiDAR Metadata Record',
     year: '2025',
     context: 'Academic geospatial metadata project',
@@ -298,7 +486,7 @@ export const projects = [
   },
   {
     id: 'bibliographic-reconciliation',
-    number: '03',
+    number: '04',
     title: 'Bibliographic Data Cleaning and Authority Reconciliation',
     year: '2026',
     context: 'Academic data-quality and bibliographic-reconciliation project',
@@ -324,7 +512,7 @@ export const projects = [
   },
   {
     id: 'multilingual-library-database',
-    number: '04',
+    number: '05',
     title: 'Multilingual Library Book Database',
     year: '2024',
     context: 'Academic database prototype',
@@ -432,33 +620,6 @@ export const projects = [
       caption:
         'This architecture summary presents a 2024 academic SQLite prototype for multilingual book-recommendation data. The implemented schema contains 26 user-defined tables, including junction tables connecting books with authors, publishers, languages, genres, and other entities. Three imported reference tables contain 80,381 language-name, language-code, and country-code rows; that figure does not represent books. A current read-only audit returned no foreign-key violations. The prototype is not a production library system.',
     },
-  },
-  {
-    id: 'talent-migration-r',
-    number: '05',
-    title: 'Talent Migration Analysis in R',
-    year: '2025',
-    context: 'Academic R analysis project',
-    summary:
-      'An R workflow integrating multi-sheet World Bank and platform-derived data with regional reference data to develop comparative, network, and Sankey views.',
-    challenge:
-      'Bring differently structured sources into comparable analytical views while keeping coverage, normalization, diagnostics, and interpretation limits visible.',
-    role:
-      'Cleaned, joined, aggregated, ranked, visualized, and documented the combined data.',
-    approach:
-      'Used R and tidyverse to integrate the sources, calculate comparative groupings, and produce comparative charts, network views, and Sankey views.',
-    methods: [
-      'R and tidyverse',
-      'Multi-sheet data integration',
-      'Cleaning and joins',
-      'Aggregation and ranking',
-      'Comparative, network, and Sankey visualization',
-    ],
-    deliverables: ['Reproducible analysis workflow', 'Comparative and network-based views'],
-    limitations: [
-      'Interpretation is limited by platform coverage, normalized indicators, and model diagnostics.',
-      'The analysis is non-causal and does not establish why migration occurred.',
-    ],
   },
   {
     id: 'openflights-3d-network',

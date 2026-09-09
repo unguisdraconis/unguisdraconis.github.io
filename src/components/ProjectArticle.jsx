@@ -1,5 +1,6 @@
 import { DmpEvidence } from './DmpEvidence.jsx'
 import { DatabaseEvidence } from './DatabaseEvidence.jsx'
+import { LcplEvidence } from './LcplEvidence.jsx'
 import { MetadataEvidence } from './MetadataEvidence.jsx'
 
 function ProjectDetail({ label, children }) {
@@ -51,6 +52,10 @@ export function ProjectArticle({ project }) {
 
         {project.evidence?.type === 'metadata-anatomy' && (
           <MetadataEvidence evidence={project.evidence} projectId={project.id} />
+        )}
+
+        {project.evidence?.type === 'collection-development' && (
+          <LcplEvidence evidence={project.evidence} projectId={project.id} />
         )}
 
         {project.evidence?.type === 'database-architecture' && (

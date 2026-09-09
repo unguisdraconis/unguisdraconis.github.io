@@ -1366,6 +1366,278 @@ dd {
   line-height: 1.5;
 }
 
+.lcpl-evidence-figure {
+  width: min(100%, 54rem);
+  margin-inline: auto;
+  margin-bottom: clamp(2.25rem, 4vw, 3.5rem);
+}
+
+.lcpl-sheet {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--rule-strong);
+  border-top: 0.28rem solid var(--moss);
+  background: var(--paper-raised);
+}
+
+.lcpl-masthead {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1.1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.1rem, 2.3vw, 1.65rem);
+}
+
+.lcpl-kicker,
+.lcpl-provenance > span {
+  margin-bottom: 0.45rem;
+  color: var(--copper-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.lcpl-masthead h4 {
+  max-width: 13ch;
+  margin-bottom: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.3vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.lcpl-framing {
+  align-self: end;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--copper);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.lcpl-metrics-section,
+.lcpl-section,
+.lcpl-dissemination {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.4rem) clamp(1.1rem, 2.3vw, 1.65rem);
+  border-top: 1px solid var(--rule);
+}
+
+.lcpl-heading {
+  margin-bottom: 0.7rem;
+  color: var(--slate);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.lcpl-metrics-section {
+  background: var(--paper-deep);
+}
+
+.lcpl-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.lcpl-metrics > div {
+  display: grid;
+  min-width: 0;
+  padding: 0.85rem 1rem;
+}
+
+.lcpl-metrics > div + div {
+  border-left: 1px solid var(--rule);
+}
+
+.lcpl-metrics dt,
+.lcpl-metrics dd {
+  margin: 0;
+}
+
+.lcpl-metrics dt {
+  grid-row: 2;
+  margin-top: 0.25rem;
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.lcpl-metrics dd {
+  grid-row: 1;
+  color: var(--copper-dark);
+  font-family: var(--serif);
+  font-size: clamp(1.65rem, 3vw, 2.15rem);
+  line-height: 1.05;
+}
+
+.lcpl-metric-note {
+  margin: 0.8rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.lcpl-process-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule-strong);
+  list-style: none;
+}
+
+.lcpl-process-list li {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  gap: 0.65rem;
+  min-width: 0;
+  padding: 0.9rem 1rem 1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.lcpl-process-list li:nth-child(even) {
+  padding-right: 0;
+  padding-left: 1rem;
+  border-left: 1px solid var(--rule);
+}
+
+.lcpl-stage-number {
+  color: var(--copper-dark);
+  font-family: var(--serif);
+  font-size: 0.82rem;
+}
+
+.lcpl-process-list h6,
+.lcpl-collaboration-grid h6,
+.lcpl-outreach-grid h6 {
+  margin: 0 0 0.35rem;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.lcpl-process-list p,
+.lcpl-dissemination p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.lcpl-process-list .lcpl-stage-note {
+  margin-top: 0.55rem;
+  padding-left: 0.65rem;
+  border-left: 2px solid var(--moss);
+  color: var(--moss);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.lcpl-collaboration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--rule-strong);
+}
+
+.lcpl-collaboration-grid > section {
+  min-width: 0;
+  padding: 0.85rem 1rem 0 0;
+}
+
+.lcpl-collaboration-grid > section + section {
+  padding-left: 1rem;
+  border-left: 1px solid var(--rule);
+}
+
+.lcpl-collaboration-grid ul,
+.lcpl-outreach-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lcpl-collaboration-grid li,
+.lcpl-outreach-grid li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 0.9rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.lcpl-collaboration-grid li::before,
+.lcpl-outreach-grid li::before {
+  position: absolute;
+  left: 0;
+  color: var(--copper-dark);
+  content: "—";
+}
+
+.lcpl-outreach {
+  background: rgba(231, 223, 210, 0.45);
+}
+
+.lcpl-outreach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lcpl-outreach-grid > section {
+  min-width: 0;
+  padding-right: clamp(1rem, 3vw, 2rem);
+}
+
+.lcpl-outreach-grid > section + section {
+  padding-right: 0;
+  padding-left: clamp(1rem, 3vw, 2rem);
+  border-left: 1px solid var(--rule);
+}
+
+.lcpl-dissemination {
+  border-left: 0.25rem solid var(--slate);
+}
+
+.lcpl-dissemination .lcpl-heading {
+  margin-bottom: 0.35rem;
+}
+
+.lcpl-provenance {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 0.9rem;
+  padding: 0.8rem clamp(1.1rem, 2.3vw, 1.65rem);
+  border-top: 1px solid var(--rule-strong);
+  background: var(--paper-deep);
+}
+
+.lcpl-provenance > span,
+.lcpl-provenance p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.lcpl-provenance p {
+  color: var(--ink-soft);
+}
+
+.lcpl-evidence-figure > figcaption {
+  margin-top: 0.7rem;
+  max-width: 88ch;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
 .project-figure {
   margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
@@ -1698,6 +1970,40 @@ dd {
     border-left: 0;
   }
 
+  .lcpl-masthead,
+  .lcpl-process-list,
+  .lcpl-collaboration-grid,
+  .lcpl-outreach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lcpl-masthead {
+    gap: 0.9rem;
+  }
+
+  .lcpl-process-list li,
+  .lcpl-process-list li:nth-child(even) {
+    padding: 0.8rem 0;
+    border-left: 0;
+  }
+
+  .lcpl-collaboration-grid > section,
+  .lcpl-collaboration-grid > section + section {
+    padding: 0.85rem 0;
+    border-left: 0;
+  }
+
+  .lcpl-collaboration-grid > section + section,
+  .lcpl-outreach-grid > section + section {
+    border-top: 1px solid var(--rule);
+  }
+
+  .lcpl-outreach-grid > section,
+  .lcpl-outreach-grid > section + section {
+    padding: 0.85rem 0;
+    border-left: 0;
+  }
+
   .metadata-section {
     padding: 0.9rem 1.1rem;
   }
@@ -2009,6 +2315,32 @@ dd {
     grid-template-columns: 1fr;
     gap: 0.25rem;
     padding: 0.8rem 1.1rem;
+  }
+
+  .lcpl-masthead,
+  .lcpl-metrics-section,
+  .lcpl-section,
+  .lcpl-dissemination {
+    padding: 1.1rem;
+  }
+
+  .lcpl-framing {
+    padding-left: 0.8rem;
+  }
+
+  .lcpl-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .lcpl-metrics > div + div {
+    border-top: 1px solid var(--rule);
+    border-left: 0;
+  }
+
+  .lcpl-provenance {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 1rem 1.1rem;
   }
 }
 
