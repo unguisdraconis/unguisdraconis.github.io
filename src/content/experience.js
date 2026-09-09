@@ -25,7 +25,7 @@ export const experience = [
     role: 'Graduate Practicum',
     period: 'Spring 2024',
     summary:
-      'Initiated and led a graduate practicum expanding an existing Spanish-language collection at Lenoir City Public Library. Researched and organized title recommendations; worked with the director to order close to 100 books through a $1,000 library allocation; cataloged and processed materials in Atriuum under staff guidance; created a public LibGuide; improved collection discovery through the OPAC and website; and initiated the 1000 Libros donation campaign.',
+      'Led a graduate practicum expanding an existing Spanish-language collection through research-informed recommendations, staff-guided cataloging, a public LibGuide, and community outreach in collaboration with library leadership.',
   },
   {
     organization: 'Dancesport of Knoxville',

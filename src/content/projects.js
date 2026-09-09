@@ -4,7 +4,7 @@ export const projects = [
   {
     id: 'agricultural-research-dmp',
     number: '01',
-    title: 'Agricultural Research Data Management Plan and Machine-Readable DMP',
+    title: 'Agricultural Research Data Management Plan',
     year: '2026',
     context: 'Academic research-data-management project',
     summary:
