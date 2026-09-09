@@ -56,6 +56,8 @@ See [`AGENTS.md`](AGENTS.md) for repository working rules.
 
 Do not commit private canonical profile material, handoff bundles, transcripts, student or certificate identifiers, signatures, recommendation material, street addresses, application-specific resumes, licensed course content, or private career-project sources. Only sanitized public content belongs in this repository.
 
-## Deployment plan
+## Deployment
 
-This is the GitHub user-site repository, so Vite uses the root base path (`/`). GitHub Pages deployment automation is intentionally deferred until the site and its public content are approved. No deployment workflow should be added or run without explicit authorization.
+The production target is [https://unguisdraconis.github.io/](https://unguisdraconis.github.io/). Because this is a GitHub user site, Vite uses the root base path (`/`).
+
+The GitHub Pages workflow installs from the committed lockfile, builds the site with Vite, and publishes only the compiled `dist/` directory through GitHub Actions. In the repository settings, Pages Source must be set to **GitHub Actions**. The generated `dist/` directory remains ignored and is not committed.
