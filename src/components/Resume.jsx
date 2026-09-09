@@ -171,6 +171,7 @@ export function Resume({ profile, resume }) {
                 {resume.presentations.map((item) => (
                   <article className="resume-mini-entry" key={item.title}>
                     <h5>{item.title}</h5>
+                    <p>{item.type}</p>
                     <p>{item.venue}</p>
                     <p className="resume-entry-period">{item.date}</p>
                   </article>

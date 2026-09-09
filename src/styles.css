@@ -2099,6 +2099,7 @@ dd {
 
 .project-figure img {
   width: 100%;
+  height: auto;
   border: 1px solid var(--rule-strong);
   background: var(--ink);
 }
@@ -2828,6 +2829,29 @@ dd {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 960px) {
+  .resume-header,
+  .resume-summary,
+  .resume-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-contact {
+    padding: 1.25rem 0 0;
+    border-top: 1px solid var(--rule);
+    border-left: 0;
+  }
+
+  .resume-summary {
+    gap: 0.45rem;
+  }
+
+  .resume-column-secondary {
+    border-top: 1px solid var(--rule-strong);
+    border-left: 0;
+  }
+}
+
 @media (max-width: 760px) {
   html {
     scroll-padding-top: 2rem;
@@ -3280,26 +3304,8 @@ dd {
     flex-direction: column;
   }
 
-  .resume-header,
-  .resume-summary,
-  .resume-columns,
   .contact-panel {
     grid-template-columns: 1fr;
-  }
-
-  .resume-contact {
-    padding: 1.25rem 0 0;
-    border-top: 1px solid var(--rule);
-    border-left: 0;
-  }
-
-  .resume-summary {
-    gap: 0.45rem;
-  }
-
-  .resume-column-secondary {
-    border-top: 1px solid var(--rule-strong);
-    border-left: 0;
   }
 
   .contact-details {
