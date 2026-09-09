@@ -489,25 +489,47 @@ export const projects = [
     number: '04',
     title: 'Bibliographic Data Cleaning and Authority Reconciliation',
     year: '2026',
-    context: 'Academic data-quality and bibliographic-reconciliation project',
+    context: 'Academic data-quality and reconciliation exercise · 2026',
     summary:
-      'A repeatable cleaning and reconciliation workflow for examining inconsistent bibliographic data and connecting records with external descriptive and authority sources.',
+      'Course-guided OpenRefine work applying facets, reviewed clustering, GREL and regular-expression transformations, one Crossref journal lookup, and Publisher-to-VIAF reconciliation to a supplied sample of 1,001 article records.',
     challenge:
-      'Identify variation and inconsistency in bibliographic strings while preserving a reviewable path from raw values to clustered, transformed, and reconciled data.',
+      'Apply a supplied cleaning sequence while distinguishing manually reviewed author-name merges from unverified external reconciliation candidates.',
     role:
-      'Created and applied the cleaning and reconciliation workflow.',
+      'Applied and documented the supplied workflow, reviewed selected author-name clusters, configured transformations and external lookups, and explored Publisher-to-VIAF reconciliation. The dataset, exercise sequence, and example expressions were supplied.',
     approach:
-      'Used OpenRefine facets with fingerprint, n-gram, and phonetic clustering; applied GREL and regular expressions; examined Crossref API JSON responses; and used VIAF reconciliation.',
+      'Inspected a supplied DOAJ article-metadata sample with facets; split multi-valued author cells; reviewed fingerprint, n-gram, Metaphone3, and Cologne candidate clusters; applied supplied GREL and regular-expression operations; performed one ISSN-based Crossref journal lookup; and reconciled Publisher strings to VIAF Corporate Name candidates through Conciliator.',
     methods: [
-      'OpenRefine facets',
-      'Fingerprint, n-gram, and phonetic clustering',
-      'GREL and regular expressions',
-      'Crossref API JSON',
-      'VIAF reconciliation',
+      'OpenRefine facets and manual cluster review',
+      'Fingerprint and n-gram fingerprint clustering',
+      'Metaphone3 and Cologne phonetic clustering',
+      'Course-supplied GREL and regular expressions',
+      'Date parsing and formatting',
+      'One Crossref REST JSON lookup',
+      'VIAF Corporate Name reconciliation through Conciliator',
     ],
-    deliverables: ['Documented cleaning and authority-reconciliation workflow'],
+    deliverables: [
+      'Documented OpenRefine cleaning and reconciliation exercise',
+      'Preserved transformation histories across three private OpenRefine project copies',
+      'Publisher-to-VIAF best-candidate reconciliation output retained privately',
+    ],
+    result:
+      'Preserved OpenRefine histories document selected transformations across 1,001 article records. A separate VIAF exercise retained best-candidate identifiers for 965 Publisher rows and left 36 unmatched; no reconciliation-accuracy evaluation was performed.',
+    provenance: [
+      'The article-metadata sample, exercise sequence, method choices, and example expressions were supplied through instructional material. The public artifact is a self-authored summary of the completed workflow, not the original exercise or data.',
+      'Crossref supplied journal metadata for one lookup. VIAF was the authority-data source, queried through the third-party Conciliator reconciliation service.',
+      'Original records, reports, API output, reconciliation mappings, and OpenRefine project files remain private; dataset redistribution terms were not established.',
+    ],
+    accessibility: [
+      'The public derivative represents the workflow as an ordered process and the clustering results as a data table.',
+      'Expressions use labelled code blocks, while candidate, review, and repeatability boundaries are stated in text rather than communicated by color.',
+    ],
     limitations: [
-      'The available evidence supports the workflow, not quantitative match-rate or accuracy claims.',
+      'The dataset, workflow design, method choices, and example expressions were supplied as part of a course-guided exercise.',
+      'The preserved histories are only partially repeatable because work is divided across three project copies and facets are not always recorded as history operations.',
+      'Clustering generated candidate similarities; only selected author-name merges were manually reviewed.',
+      'Crossref was used for one journal lookup, not across all 1,001 records.',
+      'The 965 VIAF best-candidate mappings were not independently validated and do not establish correct authority matches or an accuracy rate.',
+      'External-service results may change, and the source dataset’s redistribution terms remain unresolved.',
     ],
   },
   {
