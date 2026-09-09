@@ -12,6 +12,6 @@ export const service = [
   {
     organization: 'American Library Association International Relations Round Table',
     role: 'Webinar Committee volunteer',
-    period: '2025–2027',
+    period: '2025–2027 · Current',
   },
 ]

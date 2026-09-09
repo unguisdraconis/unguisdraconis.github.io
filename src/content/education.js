@@ -2,17 +2,19 @@ export const education = [
   {
     institution: 'University of Tennessee, Knoxville',
     credential: 'Master of Science in Information Sciences',
-    year: '2026',
-    details: [
-      'Graduate Certificate in Research Data Management — 2026',
-      'Graduate GPA: 4.00/4.00',
-      'Non-thesis program',
-    ],
+    year: 'Conferred August 15, 2026',
+    details: ['GPA: 4.00/4.00'],
+  },
+  {
+    institution: 'University of Tennessee, Knoxville',
+    credential: 'Graduate Certificate in Research Data Management',
+    year: 'Conferred August 15, 2026',
   },
   {
     institution: 'University of Tennessee, Knoxville',
     credential: 'Bachelor of Arts in Classics',
-    year: '2001',
+    year: 'Conferred December 15, 2001',
+    details: ['Concentration: Latin'],
   },
 ]
 

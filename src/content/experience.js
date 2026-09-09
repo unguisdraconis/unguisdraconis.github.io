@@ -1,10 +1,10 @@
 export const experience = [
   {
-    organization: 'FundaFunda',
-    role: 'Online Instructor',
+    organization: 'FundaFunda Online',
+    role: 'Latin Instructor',
     period: '2017–Present',
     summary:
-      'Online instruction, digital course organization, assessment and feedback, asynchronous communication, and learner-access troubleshooting.',
+      'Provides online Latin instruction, digital course organization, assessment and feedback, asynchronous communication, and learner-access support.',
   },
   {
     organization: 'Thursday Connection',
@@ -25,7 +25,7 @@ export const experience = [
     role: 'Graduate Practicum',
     period: 'Spring 2024',
     summary:
-      'Led a graduate practicum expanding an existing Spanish-language collection through research-informed recommendations, staff-guided cataloging, a public LibGuide, and community outreach in collaboration with library leadership.',
+      'Initiated and led a graduate practicum expanding an existing Spanish-language collection. Researched and organized title recommendations; worked with the director to order close to 100 books through a $1,000 library allocation; cataloged and processed materials in Atriuum under staff guidance; created a public LibGuide; improved OPAC and website discovery; and initiated the 1000 Libros donation campaign.',
   },
   {
     organization: 'Dancesport of Knoxville',
