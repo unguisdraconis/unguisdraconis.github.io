@@ -3,6 +3,8 @@ const navigation = [
   { label: 'Capabilities', href: '#capabilities' },
   { label: 'Background', href: '#education' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Résumé', href: '#resume' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 export function SiteHeader({ name }) {
@@ -24,4 +26,3 @@ export function SiteHeader({ name }) {
     </header>
   )
 }
-
