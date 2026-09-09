@@ -1,3 +1,4 @@
+import { BibliographicEvidence } from './BibliographicEvidence.jsx'
 import { DmpEvidence } from './DmpEvidence.jsx'
 import { DatabaseEvidence } from './DatabaseEvidence.jsx'
 import { LcplEvidence } from './LcplEvidence.jsx'
@@ -56,6 +57,10 @@ export function ProjectArticle({ project }) {
 
         {project.evidence?.type === 'collection-development' && (
           <LcplEvidence evidence={project.evidence} projectId={project.id} />
+        )}
+
+        {project.evidence?.type === 'bibliographic-workflow' && (
+          <BibliographicEvidence evidence={project.evidence} projectId={project.id} />
         )}
 
         {project.evidence?.type === 'database-architecture' && (

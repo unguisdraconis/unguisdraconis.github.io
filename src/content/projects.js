@@ -531,6 +531,191 @@ export const projects = [
       'The 965 VIAF best-candidate mappings were not independently validated and do not establish correct authority matches or an accuracy rate.',
       'External-service results may change, and the source dataset’s redistribution terms remain unresolved.',
     ],
+    evidence: {
+      type: 'bibliographic-workflow',
+      kicker: 'Portfolio evidence · Record-level data quality',
+      title: 'Bibliographic Cleaning & Reconciliation Workflow',
+      boundary: {
+        label: 'Project boundary',
+        description:
+          'Course-guided 2026 OpenRefine exercise using a supplied sample of DOAJ article metadata. The dataset, exercise sequence, method choices, and example expressions were supplied.',
+      },
+      metrics: [
+        {
+          value: '1,001',
+          label: 'Supplied article records',
+        },
+        {
+          value: '11',
+          label: 'Original columns',
+        },
+        {
+          value: '4,009',
+          label: 'Working rows after author splitting',
+        },
+      ],
+      metricNote:
+        'The 4,009 working rows reflect split multi-valued author cells; they do not represent 4,009 bibliographic records.',
+      workflow: [
+        {
+          title: 'Inspect',
+          description: 'Use facets to examine missing values and variation across selected fields.',
+        },
+        {
+          title: 'Cluster & review',
+          description:
+            'Generate author-name similarity candidates and manually accept selected merge groups.',
+        },
+        {
+          title: 'Transform',
+          description: 'Apply supplied GREL, regular-expression, date, and ordering operations.',
+        },
+        {
+          title: 'External lookup',
+          description: 'Perform one ISSN-based Crossref journal-metadata lookup.',
+        },
+        {
+          title: 'Authority reconciliation',
+          description: 'Request VIAF Corporate Name candidates for Publisher strings through Conciliator.',
+        },
+        {
+          title: 'Review boundary',
+          description: 'Separate reviewed author merges from unverified bulk best-candidate mappings.',
+        },
+      ],
+      facets: [
+        'Licence values',
+        'Missing DOI values',
+        'Language variation',
+        'Publisher variation',
+        'Author variation',
+      ],
+      doiCounts: [
+        {
+          value: '978',
+          label: 'Records with DOI',
+        },
+        {
+          value: '23',
+          label: 'Records without DOI',
+        },
+      ],
+      doiNote:
+        'Facet counts describe fields in the supplied article metadata; licence values do not establish a licence for redistributing the dataset.',
+      clusters: [
+        {
+          method: 'Fingerprint',
+          candidates: '9',
+          accepted: '9',
+          cells: '29',
+        },
+        {
+          method: 'N-gram fingerprint',
+          candidates: '10',
+          accepted: '9',
+          cells: '55',
+        },
+        {
+          method: 'Metaphone3',
+          candidates: '56',
+          accepted: '3',
+          cells: '8',
+        },
+        {
+          method: 'Cologne phonetic',
+          candidates: '98',
+          accepted: '1',
+          cells: '3',
+        },
+      ],
+      clusterNote:
+        'Clustering generated candidate similarities. Jeremiah reviewed and accepted selected author-name merges; the counts do not establish that every candidate represented one verified identity.',
+      transformations: {
+        types: [
+          'Language-code edit',
+          'Whitespace normalization',
+          'Title-case transformation',
+          'Date parsing and formatting',
+          'Author-order transformation',
+        ],
+        expressions: [
+          {
+            label: 'Course-supplied whitespace expression',
+            code: String.raw`value.replace(/[\p{Zs}\s]+/,' ')`,
+          },
+          {
+            label: 'Course-supplied date-format expression',
+            code: 'value.toString("dd MMMM yyyy")',
+          },
+        ],
+        expressionNote:
+          'The example expressions were supplied through instructional material and applied during the exercise; no independent authorship claim is made.',
+        examples: [
+          {
+            field: 'Language',
+            before: 'English',
+            after: 'EN',
+            note:
+              'The transformation occurred in the exercise; the language-code policy was not independently evaluated.',
+          },
+          {
+            field: 'Date',
+            before: '01/11/2015',
+            after: '11 January 2015',
+            note:
+              'The operation is documented; the original date-locale interpretation was not independently validated.',
+          },
+        ],
+      },
+      crossref: {
+        summary:
+          'One starred record was isolated for an ISSN-based Crossref journal-metadata lookup; returned JSON was stored and message.title was extracted.',
+        path: ['ISSN', 'Crossref /journals/{ISSN}', 'message.title', 'Journal Title'],
+        note:
+          'This was one journal lookup—not a lookup across all 1,001 records and not authority reconciliation. The raw response remains private.',
+      },
+      viaf: {
+        summary:
+          'Publisher strings were reconciled to VIAF Corporate Name candidates through the third-party Conciliator service.',
+        metrics: [
+          {
+            value: '965',
+            label: 'Rows retaining best-candidate mappings',
+          },
+          {
+            value: '36',
+            label: 'Rows left unmatched',
+          },
+        ],
+        note:
+          'Best-candidate mappings are workflow output, not independently verified authority matches.',
+      },
+      reviewBoundary:
+        'Selected author-name clusters were manually reviewed. The final VIAF “match each cell to its best candidate” operation was not independently validated row by row; candidate does not mean verified identity.',
+      repeatability: {
+        summary:
+          'Preserved OpenRefine histories make selected operations partially repeatable, not fully reproducible.',
+        details: [
+          'Work is divided across three private OpenRefine project copies',
+          'Facets are not always represented as history operations',
+          'Clustering algorithms are inferred from the documented exercise sequence',
+          'Crossref, VIAF, and Conciliator depend on live services whose results may change',
+        ],
+      },
+      limitations: [
+        'Course-supplied dataset and workflow design',
+        'Example expressions supplied through instructional material',
+        'Partially repeatable histories across multiple project copies',
+        'One Crossref lookup only',
+        'VIAF mappings are unverified best candidates',
+        'No reconciliation-accuracy metric',
+        'Dataset redistribution terms unresolved',
+      ],
+      provenance:
+        'Self-authored portfolio derivative based on the documented 2026 exercise and preserved OpenRefine histories. Original records, author names, article titles, identifiers, project files, API output, mappings, and instructional material remain private.',
+      caption:
+        'This workflow summary presents a 2026 academic OpenRefine exercise using 1,001 supplied article records. It traces facet-based inspection, reviewed author-name clustering, GREL and regular-expression transformations, one Crossref journal lookup, and Publisher-to-VIAF reconciliation. Preserved histories document the operations, but external candidates were not independently validated and no reconciliation-accuracy rate is available.',
+    },
   },
   {
     id: 'multilingual-library-database',
