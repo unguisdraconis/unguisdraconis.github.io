@@ -164,7 +164,7 @@ export const projects = [
       '1000 Libros donation campaign',
     ],
     result:
-      'Working with the library director and staff, the project used a $1,000 library allocation to order close to 100 books, according to the director’s public estimate.',
+      'The library allocated $1,000 to the project. The director later estimated that she and Jeremiah ordered close to 100 books together.',
     provenance: [
       'The library director approved the acquisition budget and collaborative ordering; staff and retired librarians guided cataloging and processing. Professional mentors, earlier course collaborators, and community members informed selection and needs assessment.',
       'The linked LibGuide, conference listing, institutional profile, and local reporting document the project and later library activity.',
@@ -248,7 +248,7 @@ export const projects = [
         {
           title: 'Continued library activity',
           description:
-            'After the practicum, the library continued to use and develop the collection through donations, additional purchases, and programming; public reporting documented at least one volunteer program.',
+            'After the practicum, the collection continued to grow through donations and library purchases. The library later offered a volunteer-led bilingual storytime and dance program.',
         },
       ],
       collaboration: [
