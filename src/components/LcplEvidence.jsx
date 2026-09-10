@@ -18,31 +18,11 @@ export function LcplEvidence({ evidence, projectId }) {
     >
       <div className="lcpl-sheet">
         <header className="lcpl-masthead">
-          <div>
-            <p className="lcpl-kicker">{evidence.kicker}</p>
-            <h4 id={titleId}>{evidence.title}</h4>
-          </div>
-          <p className="lcpl-framing">{evidence.framing}</p>
+          <h4 id={titleId}>{evidence.title}</h4>
         </header>
 
-        <section
-          className="lcpl-metrics-section"
-          aria-labelledby={`${projectId}-acquisition-frame`}
-        >
-          <LcplHeading id={`${projectId}-acquisition-frame`}>Acquisition frame</LcplHeading>
-          <dl className="lcpl-metrics">
-            {evidence.metrics.map((metric) => (
-              <div key={metric.label}>
-                <dt>{metric.label}</dt>
-                <dd>{metric.value}</dd>
-              </div>
-            ))}
-          </dl>
-          <p className="lcpl-metric-note">{evidence.metricNote}</p>
-        </section>
-
         <section className="lcpl-section" aria-labelledby={`${projectId}-process`}>
-          <LcplHeading id={`${projectId}-process`}>Collection-development process</LcplHeading>
+          <LcplHeading id={`${projectId}-process`}>Selected implementation details</LcplHeading>
           <ol className="lcpl-process-list">
             {evidence.process.map((stage, index) => (
               <li key={stage.title}>
@@ -56,51 +36,6 @@ export function LcplEvidence({ evidence, projectId }) {
               </li>
             ))}
           </ol>
-        </section>
-
-        <section className="lcpl-section" aria-labelledby={`${projectId}-collaboration`}>
-          <LcplHeading id={`${projectId}-collaboration`}>Collaboration</LcplHeading>
-          <div className="lcpl-collaboration-grid">
-            {evidence.collaboration.map((group, index) => {
-              const groupId = `${projectId}-collaboration-${index + 1}`
-
-              return (
-                <section key={group.title} aria-labelledby={groupId}>
-                  <h6 id={groupId}>{group.title}</h6>
-                  <ul>
-                    {group.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </section>
-              )
-            })}
-          </div>
-        </section>
-
-        <section
-          className="lcpl-section lcpl-outreach"
-          aria-labelledby={`${projectId}-outreach`}
-        >
-          <LcplHeading id={`${projectId}-outreach`}>Outreach and later activity</LcplHeading>
-          <div className="lcpl-outreach-grid">
-            <section aria-labelledby={`${projectId}-outreach-implemented`}>
-              <h6 id={`${projectId}-outreach-implemented`}>Implemented</h6>
-              <ul>
-                {evidence.outreach.implemented.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </section>
-            <section aria-labelledby={`${projectId}-outreach-planned`}>
-              <h6 id={`${projectId}-outreach-planned`}>Planned outreach</h6>
-              <ul>
-                {evidence.outreach.planned.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </section>
-          </div>
         </section>
 
         <aside className="lcpl-dissemination" aria-labelledby={`${projectId}-dissemination`}>

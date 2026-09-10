@@ -337,6 +337,19 @@ dd {
   line-height: 1.38;
 }
 
+.project-narrative {
+  max-width: 68ch;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.project-narrative .project-summary {
+  margin-bottom: 1.25rem;
+}
+
+.project-narrative p:last-child {
+  margin-bottom: 0;
+}
+
 .evidence-figure {
   margin-inline: 0;
   margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
@@ -363,14 +376,9 @@ dd {
 }
 
 .evidence-masthead {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(17rem, 0.95fr);
-  gap: clamp(2rem, 5vw, 4.5rem);
   padding: clamp(1.5rem, 4vw, 3rem);
 }
 
-.evidence-kicker,
-.evidence-code-label,
 .evidence-repository-role {
   margin-bottom: 0.55rem;
   color: var(--copper-dark);
@@ -381,35 +389,13 @@ dd {
 }
 
 .evidence-masthead h4 {
-  max-width: 15ch;
+  max-width: 18ch;
   margin-bottom: 0;
   font-family: var(--serif);
   font-size: clamp(2rem, 4vw, 3.35rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.98;
-}
-
-.evidence-scope {
-  align-self: end;
-  padding-left: 1.25rem;
-  border-left: 2px solid var(--moss);
-}
-
-.evidence-scope p:first-child {
-  margin-bottom: 0.4rem;
-  color: var(--moss);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.evidence-scope p:last-child {
-  margin-bottom: 0;
-  color: var(--ink-soft);
-  font-size: 0.92rem;
-  line-height: 1.55;
 }
 
 .evidence-section {
@@ -548,61 +534,35 @@ dd {
   line-height: 1.5;
 }
 
-.evidence-checklist,
-.evidence-repositories ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.evidence-repository-list {
+  border-top: 1px solid var(--rule-strong);
 }
 
-.evidence-checklist li {
-  position: relative;
-  padding: 0.5rem 0 0.5rem 1.2rem;
+.evidence-repository-list section {
+  padding: 0.85rem 0;
+}
+
+.evidence-repository-list section + section {
   border-top: 1px solid var(--rule);
-  font-size: 0.82rem;
-  line-height: 1.45;
 }
 
-.evidence-checklist li::before {
-  position: absolute;
-  top: 0.95rem;
-  left: 0;
-  width: 0.4rem;
-  height: 0.4rem;
-  background: var(--moss);
-  content: "";
-  transform: rotate(45deg);
-}
-
-.evidence-repositories {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.evidence-repositories > section {
-  min-width: 0;
-  padding-right: clamp(1.5rem, 4vw, 3rem);
-}
-
-.evidence-repositories > section + section {
-  padding-right: 0;
-  padding-left: clamp(1.5rem, 4vw, 3rem);
-  border-left: 1px solid var(--rule);
-}
-
-.evidence-repositories h6 {
-  margin: 0 0 1rem;
+.evidence-repository-list h6 {
+  margin: 0 0 0.25rem;
   font-family: var(--serif);
   font-size: 1.35rem;
   font-weight: 400;
   line-height: 1.2;
 }
 
-.evidence-repositories li {
-  padding: 0.4rem 0;
-  border-top: 1px solid var(--rule);
+.evidence-repository-role {
+  margin-bottom: 0.35rem;
+}
+
+.evidence-repository-rationale {
+  margin: 0;
   color: var(--ink-soft);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
 }
 
 .evidence-policy-note {
@@ -1247,23 +1207,11 @@ dd {
 }
 
 .lcpl-masthead {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1.1fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
   padding: clamp(1.1rem, 2.3vw, 1.65rem);
 }
 
-.lcpl-kicker {
-  margin-bottom: 0.45rem;
-  color: var(--copper-dark);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
 .lcpl-masthead h4 {
-  max-width: 13ch;
+  max-width: 18ch;
   margin-bottom: 0;
   font-family: var(--serif);
   font-size: clamp(1.8rem, 3.3vw, 2.75rem);
@@ -1272,17 +1220,6 @@ dd {
   line-height: 1;
 }
 
-.lcpl-framing {
-  align-self: end;
-  margin-bottom: 0;
-  padding-left: 1rem;
-  border-left: 2px solid var(--copper);
-  color: var(--ink-soft);
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.lcpl-metrics-section,
 .lcpl-section,
 .lcpl-dissemination {
   min-width: 0;
@@ -1297,56 +1234,6 @@ dd {
   font-weight: 800;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-}
-
-.lcpl-metrics-section {
-  background: var(--paper-deep);
-}
-
-.lcpl-metrics {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 0;
-  border-top: 1px solid var(--rule-strong);
-  border-bottom: 1px solid var(--rule-strong);
-}
-
-.lcpl-metrics > div {
-  display: grid;
-  min-width: 0;
-  padding: 0.85rem 1rem;
-}
-
-.lcpl-metrics > div + div {
-  border-left: 1px solid var(--rule);
-}
-
-.lcpl-metrics dt,
-.lcpl-metrics dd {
-  margin: 0;
-}
-
-.lcpl-metrics dt {
-  grid-row: 2;
-  margin-top: 0.25rem;
-  color: var(--ink-soft);
-  font-size: 0.875rem;
-  line-height: 1.4;
-}
-
-.lcpl-metrics dd {
-  grid-row: 1;
-  color: var(--copper-dark);
-  font-family: var(--serif);
-  font-size: clamp(1.65rem, 3vw, 2.15rem);
-  line-height: 1.05;
-}
-
-.lcpl-metric-note {
-  margin: 0.8rem 0 0;
-  color: var(--ink-soft);
-  font-size: 0.86rem;
-  line-height: 1.5;
 }
 
 .lcpl-process-list {
@@ -1373,15 +1260,17 @@ dd {
   border-left: 1px solid var(--rule);
 }
 
+.lcpl-process-list li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .lcpl-stage-number {
   color: var(--copper-dark);
   font-family: var(--serif);
   font-size: 0.82rem;
 }
 
-.lcpl-process-list h6,
-.lcpl-collaboration-grid h6,
-.lcpl-outreach-grid h6 {
+.lcpl-process-list h6 {
   margin: 0 0 0.35rem;
   font-family: var(--serif);
   font-size: 1.05rem;
@@ -1395,67 +1284,6 @@ dd {
   color: var(--ink-soft);
   font-size: 0.875rem;
   line-height: 1.5;
-}
-
-.lcpl-collaboration-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--rule-strong);
-}
-
-.lcpl-collaboration-grid > section {
-  min-width: 0;
-  padding: 0.85rem 1rem 0 0;
-}
-
-.lcpl-collaboration-grid > section + section {
-  padding-left: 1rem;
-  border-left: 1px solid var(--rule);
-}
-
-.lcpl-collaboration-grid ul,
-.lcpl-outreach-grid ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.lcpl-collaboration-grid li,
-.lcpl-outreach-grid li {
-  position: relative;
-  padding: 0.4rem 0 0.4rem 0.9rem;
-  border-top: 1px solid var(--rule);
-  color: var(--ink-soft);
-  font-size: 0.875rem;
-  line-height: 1.45;
-}
-
-.lcpl-collaboration-grid li::before,
-.lcpl-outreach-grid li::before {
-  position: absolute;
-  left: 0;
-  color: var(--copper-dark);
-  content: "•";
-}
-
-.lcpl-outreach {
-  background: rgba(231, 223, 210, 0.45);
-}
-
-.lcpl-outreach-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.lcpl-outreach-grid > section {
-  min-width: 0;
-  padding-right: clamp(1rem, 3vw, 2rem);
-}
-
-.lcpl-outreach-grid > section + section {
-  padding-right: 0;
-  padding-left: clamp(1rem, 3vw, 2rem);
-  border-left: 1px solid var(--rule);
 }
 
 .lcpl-dissemination {
@@ -2709,9 +2537,7 @@ dd {
 
   .project-details,
   .project-supporting,
-  .evidence-masthead,
   .evidence-split,
-  .evidence-repositories,
   .metadata-masthead,
   .metadata-anatomy-list,
   .metadata-xml-grid,
@@ -2761,37 +2587,13 @@ dd {
     border-left: 0;
   }
 
-  .lcpl-masthead,
-  .lcpl-process-list,
-  .lcpl-collaboration-grid,
-  .lcpl-outreach-grid {
+  .lcpl-process-list {
     grid-template-columns: 1fr;
-  }
-
-  .lcpl-masthead {
-    gap: 0.9rem;
   }
 
   .lcpl-process-list li,
   .lcpl-process-list li:nth-child(even) {
     padding: 0.8rem 0;
-    border-left: 0;
-  }
-
-  .lcpl-collaboration-grid > section,
-  .lcpl-collaboration-grid > section + section {
-    padding: 0.85rem 0;
-    border-left: 0;
-  }
-
-  .lcpl-collaboration-grid > section + section,
-  .lcpl-outreach-grid > section + section {
-    border-top: 1px solid var(--rule);
-  }
-
-  .lcpl-outreach-grid > section,
-  .lcpl-outreach-grid > section + section {
-    padding: 0.85rem 0;
     border-left: 0;
   }
 
@@ -2930,24 +2732,8 @@ dd {
     content: "↓";
   }
 
-  .evidence-masthead {
-    gap: 1.5rem;
-  }
-
-  .evidence-split > .evidence-section + .evidence-section,
-  .evidence-repositories > section + section {
+  .evidence-split > .evidence-section + .evidence-section {
     border-left: 0;
-  }
-
-  .evidence-repositories > section,
-  .evidence-repositories > section + section {
-    padding: 0;
-  }
-
-  .evidence-repositories > section + section {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--rule);
   }
 
   .evidence-lifecycle {
@@ -3139,10 +2925,6 @@ dd {
     padding: 1.15rem;
   }
 
-  .evidence-scope {
-    padding-left: 0.85rem;
-  }
-
   .evidence-code {
     overflow-wrap: anywhere;
     white-space: pre-wrap;
@@ -3213,23 +2995,9 @@ dd {
   }
 
   .lcpl-masthead,
-  .lcpl-metrics-section,
   .lcpl-section,
   .lcpl-dissemination {
     padding: 1.1rem;
-  }
-
-  .lcpl-framing {
-    padding-left: 0.8rem;
-  }
-
-  .lcpl-metrics {
-    grid-template-columns: 1fr;
-  }
-
-  .lcpl-metrics > div + div {
-    border-top: 1px solid var(--rule);
-    border-left: 0;
   }
 
   .bib-masthead,

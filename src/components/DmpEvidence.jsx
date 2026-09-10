@@ -14,14 +14,7 @@ export function DmpEvidence({ evidence, projectId }) {
     <figure className="evidence-figure" aria-labelledby={titleId} aria-describedby={captionId}>
       <div className="evidence-sheet">
         <header className="evidence-masthead">
-          <div>
-            <p className="evidence-kicker">{evidence.kicker}</p>
-            <h4 id={titleId}>{evidence.title}</h4>
-          </div>
-          <div className="evidence-scope">
-            <p>{evidence.scopeLabel}</p>
-            <p>{evidence.scope}</p>
-          </div>
+          <h4 id={titleId}>{evidence.title}</h4>
         </header>
 
         <section className="evidence-section" aria-labelledby={`${projectId}-outputs`}>
@@ -32,7 +25,7 @@ export function DmpEvidence({ evidence, projectId }) {
                 <tr>
                   <th scope="col">Planned output</th>
                   <th scope="col">Purpose</th>
-                  <th scope="col">Planned format / stewardship</th>
+                  <th scope="col">Planned format and stewardship</th>
                 </tr>
               </thead>
               <tbody>
@@ -42,7 +35,7 @@ export function DmpEvidence({ evidence, projectId }) {
                       {output.name}
                     </th>
                     <td data-label="Purpose">{output.purpose}</td>
-                    <td data-label="Planned format / stewardship">{output.stewardship}</td>
+                    <td data-label="Planned format and stewardship">{output.stewardship}</td>
                   </tr>
                 ))}
               </tbody>
@@ -51,7 +44,7 @@ export function DmpEvidence({ evidence, projectId }) {
         </section>
 
         <section className="evidence-section" aria-labelledby={`${projectId}-lifecycle`}>
-          <EvidenceHeading id={`${projectId}-lifecycle`}>Planned lifecycle</EvidenceHeading>
+          <EvidenceHeading id={`${projectId}-lifecycle`}>Planned stewardship</EvidenceHeading>
           <ol className="evidence-lifecycle">
             {evidence.lifecycle.map((item, index) => (
               <li key={item.step}>
@@ -67,46 +60,30 @@ export function DmpEvidence({ evidence, projectId }) {
 
         <div className="evidence-split">
           <section className="evidence-section" aria-labelledby={`${projectId}-json`}>
-            <EvidenceHeading id={`${projectId}-json`}>Machine-readable DMP</EvidenceHeading>
-            <p className="evidence-code-label">Selected structural excerpt</p>
+            <EvidenceHeading id={`${projectId}-json`}>Selected DMP Roadmap JSON</EvidenceHeading>
             <pre className="evidence-code">
               <code>{evidence.jsonExcerpt}</code>
             </pre>
           </section>
 
-          <section className="evidence-section" aria-labelledby={`${projectId}-stewardship`}>
-            <EvidenceHeading id={`${projectId}-stewardship`}>
-              Prospective stewardship considerations
-            </EvidenceHeading>
-            <ul className="evidence-checklist">
-              {evidence.stewardship.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+          <section className="evidence-section" aria-labelledby={`${projectId}-repositories`}>
+            <EvidenceHeading id={`${projectId}-repositories`}>Repository evaluation</EvidenceHeading>
+            <div className="evidence-repository-list">
+              {evidence.repositories.map((repository) => {
+                const repositoryId = `${projectId}-${repository.name.replaceAll(' ', '-').toLowerCase()}`
+
+                return (
+                  <section key={repository.name} aria-labelledby={repositoryId}>
+                    <h6 id={repositoryId}>{repository.name}</h6>
+                    <p className="evidence-repository-role">{repository.role}</p>
+                    <p className="evidence-repository-rationale">{repository.rationale}</p>
+                  </section>
+                )
+              })}
+            </div>
+            <p className="evidence-policy-note">{evidence.repositoryNote}</p>
           </section>
         </div>
-
-        <section className="evidence-section" aria-labelledby={`${projectId}-repositories`}>
-          <EvidenceHeading id={`${projectId}-repositories`}>Repository evaluation</EvidenceHeading>
-          <div className="evidence-repositories">
-            {evidence.repositories.map((repository) => {
-              const repositoryId = `${projectId}-${repository.name.replaceAll(' ', '-').toLowerCase()}`
-
-              return (
-                <section key={repository.name} aria-labelledby={repositoryId}>
-                  <p className="evidence-repository-role">{repository.role}</p>
-                  <h6 id={repositoryId}>{repository.name}</h6>
-                  <ul>
-                    {repository.considerations.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </section>
-              )
-            })}
-          </div>
-          <p className="evidence-policy-note">{evidence.repositoryNote}</p>
-        </section>
 
       </div>
       <figcaption id={captionId}>{evidence.caption}</figcaption>

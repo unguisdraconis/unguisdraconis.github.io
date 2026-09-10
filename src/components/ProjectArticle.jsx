@@ -31,6 +31,8 @@ function DetailList({ title, items }) {
 }
 
 export function ProjectArticle({ project }) {
+  const hasNarrative = project.narrative?.length > 0
+
   return (
     <article className="project" aria-labelledby={`${project.id}-title`}>
       <p className="project-number" aria-hidden="true">
@@ -45,7 +47,17 @@ export function ProjectArticle({ project }) {
           <p className="project-year">{project.year}</p>
         </header>
 
-        <p className="project-summary">{project.summary}</p>
+        {hasNarrative ? (
+          <div className="project-narrative">
+            {project.narrative.map((paragraph, index) => (
+              <p className={index === 0 ? 'project-summary' : undefined} key={paragraph}>
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        ) : (
+          <p className="project-summary">{project.summary}</p>
+        )}
 
         {project.evidence?.type === 'dmp-summary' && (
           <DmpEvidence evidence={project.evidence} projectId={project.id} />
@@ -80,20 +92,24 @@ export function ProjectArticle({ project }) {
           </figure>
         )}
 
-        <dl className="project-details">
-          <ProjectDetail label="Challenge">{project.challenge}</ProjectDetail>
-          <ProjectDetail label="Role and scope">{project.role}</ProjectDetail>
-          <ProjectDetail label="Approach">{project.approach}</ProjectDetail>
-          <ProjectDetail label="Result">{project.result}</ProjectDetail>
-          <ProjectDetail label="AI assistance">{project.aiAssistance}</ProjectDetail>
-        </dl>
+        {!hasNarrative && (
+          <>
+            <dl className="project-details">
+              <ProjectDetail label="Challenge">{project.challenge}</ProjectDetail>
+              <ProjectDetail label="Role and scope">{project.role}</ProjectDetail>
+              <ProjectDetail label="Approach">{project.approach}</ProjectDetail>
+              <ProjectDetail label="Result">{project.result}</ProjectDetail>
+              <ProjectDetail label="AI assistance">{project.aiAssistance}</ProjectDetail>
+            </dl>
 
-        <div className="project-supporting">
-          <DetailList title="Methods" items={project.methods} />
-          <DetailList title="Deliverables" items={project.deliverables} />
-          <DetailList title="Sources and provenance" items={project.provenance} />
-          <DetailList title="Accessibility" items={project.accessibility} />
-        </div>
+            <div className="project-supporting">
+              <DetailList title="Methods" items={project.methods} />
+              <DetailList title="Deliverables" items={project.deliverables} />
+              <DetailList title="Sources and provenance" items={project.provenance} />
+              <DetailList title="Accessibility" items={project.accessibility} />
+            </div>
+          </>
+        )}
 
         {project.links?.length > 0 && (
           <div className="project-links" aria-label={`${project.title} links`}>

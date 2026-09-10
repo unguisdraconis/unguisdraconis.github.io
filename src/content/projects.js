@@ -7,39 +7,13 @@ export const projects = [
     title: 'Agricultural Research Data Management Plan',
     year: '2026',
     context: 'Academic research-data-management project',
-    summary:
-      'An academic data management plan for a proposed study of AI use in small-scale agriculture, covering how four planned research outputs would be collected, documented, protected, shared, and preserved.',
-    challenge:
-      'Define four planned research outputs and document stewardship decisions before data collection.',
-    role:
-      'Developed the narrative data management plan, a DMP Roadmap JSON representation, and a repository evaluation.',
-    approach:
-      'The narrative plan addresses formats, documentation, quality assurance, ethics, anonymization, permissions, storage, backup, sharing, responsibilities, costs, retention, and preservation. A DMP Roadmap JSON representation captures project structure, planned outputs, distribution, access, licensing, and metadata fields.',
-    methods: [
-      'Data management planning',
-      'DMP Roadmap JSON',
-      'Sensitive-data planning',
-      'Repository evaluation',
-    ],
-    deliverables: [
-      'Narrative data management plan',
-      'Machine-readable DMP Roadmap JSON',
-      'Evaluation of USDA Ag Data Commons as the primary intended repository and Zenodo as a fallback',
-    ],
-    provenance: [
-      'Created in 2026 with DMP Tool using a Digital Curation Centre template. The portfolio summary draws on the narrative plan and its DMP Roadmap JSON representation.',
-    ],
-    accessibility: [
-      'The summary presents the four outputs in a data table and the lifecycle as an ordered sequence.',
-      'Planning status and repository roles are expressed in text as well as visually.',
+    narrative: [
+      'For this academic project, I developed a data management plan for a proposed study of AI use in small-scale agriculture. I defined four planned research outputs and documented how they would be created or derived, described, protected, shared, and preserved.',
+      'I prepared both a narrative plan and a DMP Roadmap JSON representation. The narrative contains most of the lifecycle detail, including consent, documentation, quality review, identifiers, access, backups, sharing, responsibilities, costs, and preservation. The JSON represents the project, its planned outputs, and distribution structure. I created the plan in 2026 with DMP Tool using a Digital Curation Centre template.',
     ],
     evidence: {
       type: 'dmp-summary',
-      kicker: 'Academic project · Data stewardship',
-      title: 'Data stewardship plan at a glance',
-      scopeLabel: 'Proposed research context',
-      scope:
-        'Developed for a proposed study of AI use in small-scale agriculture, the plan covers four anticipated research outputs and their stewardship.',
+      title: 'Plan structure and stewardship',
       outputs: [
         {
           name: 'Analyzed Data',
@@ -64,33 +38,45 @@ export const projects = [
       ],
       lifecycle: [
         {
-          step: 'Collect / acquire',
-          note: 'Consent planned before collection',
+          step: 'Plan consent and reuse',
+          note: 'Document consent before collection and define reuse expectations for resulting data.',
         },
         {
-          step: 'Document & quality-check',
-          note: 'Metadata and review incorporated',
+          step: 'Document and review',
+          note: 'Create metadata and method documentation, with quality review built into the workflow.',
         },
         {
-          step: 'Protect & store',
-          note: 'Identifiers separated; access and backups planned',
+          step: 'Protect active data',
+          note: 'Separate identifiers from research data and plan access controls and backups by sensitivity.',
         },
         {
           step: 'Share approved outputs',
-          note: 'Open sharing limited to approved anonymized outputs',
+          note: 'Limit open sharing to approved anonymized outputs and document distribution and licensing.',
         },
         {
-          step: 'Preserve in repository',
-          note: 'Deposit planned for discovery and preservation',
+          step: 'Preserve and discover',
+          note: 'Prepare approved outputs and documentation for repository deposit and discovery.',
         },
       ],
       jsonExcerpt: `{
   "dmp": {
     "dataset": [
-      { "type": "dataset", "title": "Analyzed Data" },
-      { "type": "dataset", "title": "Anonymized Data" },
-      { "type": "text", "title": "Transcripts" },
-      { "type": "text", "title": "Metadata" }
+      {
+        "type": "dataset",
+        "title": "Analyzed Data"
+      },
+      {
+        "type": "dataset",
+        "title": "Anonymized Data"
+      },
+      {
+        "type": "text",
+        "title": "Transcripts"
+      },
+      {
+        "type": "text",
+        "title": "Metadata"
+      }
     ]
   }
 }`,
@@ -98,38 +84,18 @@ export const projects = [
         {
           name: 'USDA Ag Data Commons',
           role: 'Primary intended repository',
-          considerations: [
-            'Domain-specific agricultural fit',
-            'Intended open access and discovery',
-            'DOI anticipated',
-            'Deposit preparation considered',
-            'No storage cost anticipated',
-          ],
+          rationale: 'Agricultural subject coverage made it the preferred fit for the proposed study.',
         },
         {
           name: 'Zenodo',
-          role: 'Generalist fallback',
-          considerations: [
-            'General-purpose repository',
-            'Intended open access and discovery',
-            'DOI anticipated',
-            'Deposit preparation considered',
-            'No storage cost anticipated',
-          ],
+          role: 'Fallback repository',
+          rationale: 'A general-purpose option if the primary repository was not suitable.',
         },
       ],
       repositoryNote:
-        'Repository choices reflect the 2026 academic analysis and would need confirmation before an actual deposit.',
-      stewardship: [
-        'Consent and reuse expectations planned before collection',
-        'Identifiers separated from research data',
-        'Documentation and quality review incorporated into the workflow',
-        'Access and backups planned according to sensitivity',
-        'Public sharing limited to approved anonymized outputs',
-        'Repository deposit planned for discovery and preservation',
-      ],
+        'The 2026 plan considered both options for open access, DOI assignment, deposit preparation, and no anticipated storage charge. Repository acceptance and current service terms would need confirmation before deposit.',
       caption:
-        'A summary of four planned research outputs, their lifecycle and stewardship requirements, a DMP Roadmap JSON excerpt, and repository options.',
+        'Output, stewardship, JSON, and repository details from the 2026 academic plan.',
     },
   },
   {
@@ -138,40 +104,10 @@ export const projects = [
     title: 'Building a Spanish-Language Collection at Lenoir City Public Library',
     year: '2024',
     context: 'Graduate practicum · Spring 2024',
-    summary:
-      'An applied public-library practicum that expanded an existing Spanish-language collection through community-needs assessment, title research, collaborative acquisition, cataloging, discovery, and outreach.',
-    challenge:
-      'Expand access to Spanish-language and bilingual materials within the library’s existing collection, budget, cataloging workflows, and public discovery systems.',
-    role:
-      'Led the practicum’s local implementation in collaboration with library staff, professional mentors, earlier course collaborators, and community members.',
-    approach:
-      'Combined public demographic information with community engagement to identify collection needs and research Spanish-language and bilingual titles. Organized recommendations in a public LibGuide, worked with the library director on ordering, cataloged and processed materials in Atriuum under staff guidance, improved online discovery, and initiated the 1000 Libros campaign.',
-    methods: [
-      'Community-needs assessment and direct engagement',
-      'Collection development research',
-      'Spanish-language and bilingual title research',
-      'LibGuide recommendation design',
-      'Budget-constrained acquisitions',
-      'Atriuum cataloging and physical processing',
-      'OPAC and website discovery',
-      'Outreach planning and professional collaboration',
-    ],
-    deliverables: [
-      'Public collection-development LibGuide',
-      'Spanish-language and bilingual title recommendations',
-      'Collaborative ordering and collection processing',
-      'OPAC and website discovery improvements',
-      '1000 Libros donation campaign',
-    ],
-    result:
-      'The library allocated $1,000 to the project. The director later estimated that she and Jeremiah ordered close to 100 books together.',
-    provenance: [
-      'The library director approved the acquisition budget and collaborative ordering; staff and retired librarians guided cataloging and processing. Professional mentors, earlier course collaborators, and community members informed selection and needs assessment.',
-      'The linked LibGuide, conference listing, institutional profile, and local reporting document the project and later library activity.',
-    ],
-    accessibility: [
-      'The eight-stage process is presented as ordered text, with no information dependent on color or hover.',
-      'The layout preserves reading and keyboard order and stacks at narrow widths.',
+    narrative: [
+      'I initiated and led this Spring 2024 graduate practicum to expand Lenoir City Public Library’s existing Spanish-language collection. Earlier group coursework informed the community analysis, and I combined public demographic information with community conversations to identify collection and service needs.',
+      'With guidance from professional mentors, including a REFORMA mentor, and other collection-development sources, I researched Spanish-language and bilingual titles and organized recommendations in a public LibGuide. The library director approved the practicum and its purchasing decisions, and we worked together on selection and ordering. The library allocated $1,000 to the project. The director later estimated that we ordered close to 100 books together.',
+      'With guidance from library staff and retired librarians, I cataloged and processed materials in Atriuum. I also improved collection discovery through the OPAC and library website and initiated the 1000 Libros donation campaign. The collection continued to grow through donations and further library purchases. After the practicum, I continued as a volunteer for a bilingual storytime and dance program.',
     ],
     links: [
       {
@@ -193,106 +129,37 @@ export const projects = [
     ],
     evidence: {
       type: 'collection-development',
-      kicker: 'Graduate practicum · Collection development',
-      title: 'From Community Need to Collection Access',
-      framing:
-        'During this Spring 2024 practicum, the library expanded an existing Spanish-language collection through collaborative research, acquisition, cataloging, discovery, and outreach.',
-      metrics: [
-        {
-          value: '$1,000',
-          label: 'Library acquisition allocation',
-        },
-        {
-          value: 'Close to 100',
-          label: 'Books ordered through the collaborative project',
-        },
-      ],
-      metricNote:
-        'The close-to-100 figure is the library director’s approximate public estimate for books ordered collaboratively through the project.',
+      title: 'Collection work in practice',
       process: [
-        {
-          title: 'Community need',
-          description:
-            'Combined public demographic information with direct community engagement to assess Spanish-language collection and service needs.',
-        },
         {
           title: 'Selection research',
           description:
             'Consulted REFORMA and professional recommendations, publisher and bookseller sources, award and bestseller lists, notable authors, and children’s, juvenile, and adult materials across bilingual works, translations, and original Spanish-language works.',
         },
         {
-          title: 'LibGuide recommendations',
+          title: 'Public LibGuide',
           description:
             'Organized candidate titles and selection sources in a public LibGuide that served as a recommendation resource, visual advocacy tool, and secondary discovery resource.',
         },
         {
-          title: 'Budget & ordering',
-          description:
-            'Researched and organized title recommendations and worked with the library director to select purchases within the acquisition budget.',
-        },
-        {
-          title: 'Cataloging & processing',
+          title: 'Atriuum cataloging and processing',
           description:
             'Cataloged and processed materials in Atriuum under staff guidance, including item entry, bibliographic-record editing, barcode and spine-label generation, and physical processing.',
         },
         {
-          title: 'OPAC / website discovery',
+          title: 'Online discovery',
           description:
             'Added collection-related content, improved connections among library web resources, worked with a localized OPAC interface, and made the collection easier to locate and promote online.',
         },
         {
-          title: '1000 Libros outreach',
+          title: '1000 Libros campaign',
           description:
             'Initiated a donation campaign intended to increase collection visibility and invite continued community support.',
         },
-        {
-          title: 'Continued library activity',
-          description:
-            'After the practicum, the collection continued to grow through donations and library purchases. The library later offered a volunteer-led bilingual storytime and dance program.',
-        },
       ],
-      collaboration: [
-        {
-          title: 'Jeremiah',
-          items: [
-            'Initiated the practicum and led its local implementation',
-            'Conducted local research and title-recommendation work',
-            'Created the LibGuide and performed cataloging and discovery tasks',
-            'Developed the outreach approach',
-          ],
-        },
-        {
-          title: 'Library staff',
-          items: [
-            'Approved the project and guided implementation',
-            'Allocated the acquisition budget and collaborated on ordering',
-            'Provided cataloging and processing instruction',
-          ],
-        },
-        {
-          title: 'Professional and community input',
-          items: [
-            'REFORMA mentor and professional resources informed selection',
-            'Earlier course collaborators informed the community analysis',
-            'Community members contributed needs information',
-          ],
-        },
-      ],
-      outreach: {
-        implemented: [
-          'Initiated the 1000 Libros donation campaign',
-          'Improved collection visibility through library discovery channels',
-        ],
-        planned: [
-          'Additional flyer, Spanish-language radio, social-media, and community-organization outreach',
-          'QR-code analytics',
-          'Grant applications beyond opportunity research',
-        ],
-      },
       dissemination:
-        'The official 2025 ALA Diversity Fair program lists Jeremiah as the sole author and presenter for a poster drawing on the practicum’s lessons.',
-      caption:
-        'This eight-stage summary follows the practicum from community-needs assessment through title research, collaborative ordering, cataloging, online discovery, and the 1000 Libros campaign.',
+        'The official 2025 ALA Diversity Fair program lists me as the sole author and presenter for a poster drawing on the practicum’s lessons.',
+      caption: 'Selected implementation details from the Spring 2024 practicum.',
     },
   },
   {
