@@ -91,9 +91,8 @@ export function ProjectArticle({ project }) {
         <div className="project-supporting">
           <DetailList title="Methods" items={project.methods} />
           <DetailList title="Deliverables" items={project.deliverables} />
-          <DetailList title="Data provenance" items={project.provenance} />
-          <DetailList title="Accessibility decisions" items={project.accessibility} />
-          <DetailList title="Limits" items={project.limitations} />
+          <DetailList title="Sources and provenance" items={project.provenance} />
+          <DetailList title="Accessibility" items={project.accessibility} />
         </div>
 
         {project.links?.length > 0 && (
@@ -104,7 +103,7 @@ export function ProjectArticle({ project }) {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`${link.label} — ${project.title} (opens in a new tab)`}
+                aria-label={`${link.label}, ${project.title} (opens in a new tab)`}
               >
                 {link.label} <span aria-hidden="true">↗</span>
               </a>

@@ -25,7 +25,7 @@ function selectCapabilities(items) {
 
 export const publicResume = {
   capabilitiesIntroduction:
-    'Methods and technologies evidenced in the selected academic and portfolio work.',
+    'Methods and technologies applied in selected academic and portfolio projects.',
   capabilities: [
     {
       title: 'Research Data & Stewardship',

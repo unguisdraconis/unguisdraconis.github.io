@@ -3,13 +3,13 @@ export const profile = {
   descriptor:
     "Research Data Management · Digital Curation · Data Visualization",
   statement:
-    "I organize, document, analyze, and communicate complex information, building systems and visual tools that make data more FAIR, findable, accessible, interoperable, reusable.",
+    "I organize, document, analyze, and communicate complex information through data stewardship, structured systems, and accessible visualization.",
   metadata:
     "MS Information Sciences · Graduate Certificate in Research Data Management · East Tennessee / Remote",
   positioning:
     "Information scientist and research-data practitioner connecting data stewardship, metadata, analysis, digital curation, and accessible visualization.",
   resumeSummary:
-    "Information scientist and research-data practitioner connecting data stewardship, metadata, structured information, digital curation, analysis, and accessible visualization. Builds evidence-grounded systems and communication tools that make complex information more discoverable, trustworthy, and usable.",
+    "Jeremiah is an information scientist and research-data practitioner working across data stewardship, metadata, structured information, digital curation, analysis, and accessible visualization. He builds systems and communication tools that make complex information easier to discover, understand, and use.",
   location: "Lenoir City, Tennessee",
   contacts: [
     {

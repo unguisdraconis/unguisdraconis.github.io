@@ -1,8 +1,8 @@
-# Jeremiah King — Professional Portfolio
+# Jeremiah King: Professional Portfolio
 
 This repository contains Jeremiah King's public professional portfolio. The site presents selected work in research data management, metadata, digital curation, data quality, analysis, relational design, and accessible visualization.
 
-The portfolio is a single-page React application built with Vite and plain CSS. Structured professional content is kept separate from presentation components so that public claims remain easy to review against approved evidence.
+The portfolio is a single-page React application built with Vite and plain CSS. Structured professional content is kept separate from presentation components so that the writing can be maintained independently of the interface.
 
 ## Local setup
 
@@ -37,18 +37,18 @@ Do not run automatic dependency-fix commands as part of routine validation.
 
 ## Architecture
 
-- `src/content/` contains public, evidence-reviewed profile, project, study, capability, education, experience, presentation, and service records.
+- `src/content/` contains the public profile, project, study, capability, education, experience, presentation, and service records.
 - `src/components/` contains semantic presentation components.
-- `src/assets/projects/` contains optimized portfolio media derived from verified project sources.
+- `src/assets/projects/` contains optimized portfolio media drawn from project sources.
 - `src/styles.css` contains the design tokens, editorial layout, responsive behavior, focus treatment, and reduced-motion handling.
 
 The site intentionally uses no router, UI framework, CSS framework, state-management library, analytics package, or animation library.
 
 ## Content and evidence policy
 
-Portfolio claims must be traceable to approved public-safe facts or to the public repositories they describe. Academic prototypes, course exercises, portfolio projects, and production systems must remain clearly distinguished. Missing facts are omitted rather than replaced with generic claims or invented outcomes.
+Portfolio claims must be traceable to approved facts or to the public repositories they describe. Academic prototypes, course exercises, portfolio projects, and production systems must remain clearly distinguished. Missing facts are omitted rather than replaced with generic claims or invented outcomes.
 
-Project-specific technologies demonstrate work performed in that project; they are not presented as proficiency rankings or broad expertise claims. Data provenance, licensing, limitations, accessibility decisions, contribution boundaries, and material AI assistance should remain visible when evidence supports them.
+Project-specific technologies describe work performed in that project; they are not presented as proficiency rankings or broad expertise claims. Data provenance, licensing, material limitations, accessibility decisions, contributor roles, and material AI assistance should remain visible where relevant.
 
 See [`AGENTS.md`](AGENTS.md) for repository working rules.
 

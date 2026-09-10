@@ -8,13 +8,13 @@ export const projects = [
     year: '2026',
     context: 'Academic research-data-management project',
     summary:
-      'An academic data management plan for a proposed study of AI use in small-scale agriculture. The work models how research data would be collected, documented, protected, shared, and preserved; the study was not conducted and no research findings are reported.',
+      'An academic data management plan for a proposed study of AI use in small-scale agriculture, covering how four planned research outputs would be collected, documented, protected, shared, and preserved.',
     challenge:
-      'Define four planned research outputs and document prospective stewardship decisions before the proposed research began.',
+      'Define four planned research outputs and document stewardship decisions before data collection.',
     role:
-      'Developed the narrative data management plan, a DMP Roadmap JSON representation, and a repository evaluation for the proposed study.',
+      'Developed the narrative data management plan, a DMP Roadmap JSON representation, and a repository evaluation.',
     approach:
-      'The narrative plan addresses collection, formats, documentation, quality assurance, ethics, anonymization, permissions, storage, backup, sharing, responsibilities, costs, retention, and preservation. The JSON represents project structure, planned outputs, distribution, access, licensing, and metadata-related fields.',
+      'The narrative plan addresses formats, documentation, quality assurance, ethics, anonymization, permissions, storage, backup, sharing, responsibilities, costs, retention, and preservation. A DMP Roadmap JSON representation captures project structure, planned outputs, distribution, access, licensing, and metadata fields.',
     methods: [
       'Data management planning',
       'DMP Roadmap JSON',
@@ -27,24 +27,19 @@ export const projects = [
       'Evaluation of USDA Ag Data Commons as the primary intended repository and Zenodo as a fallback',
     ],
     provenance: [
-      'The public evidence is a self-authored derivative based on a private narrative DMP and DMP Roadmap JSON; the source exports remain private.',
-      'Lifecycle detail is derived primarily from the narrative plan. The sanitized JSON excerpt demonstrates machine-readable structure rather than the complete set of lifecycle decisions.',
+      'Created in 2026 with DMP Tool using a Digital Curation Centre template. The portfolio summary draws on the narrative plan and its DMP Roadmap JSON representation.',
     ],
     accessibility: [
-      'The evidence summary uses semantic headings, a real data table, an ordered lifecycle, and a labelled code block.',
-      'Planning status and repository roles are stated in text rather than communicated by color alone.',
-    ],
-    limitations: [
-      'The plan concerns a proposed study; it does not report a completed study or research findings.',
-      'The repository comparison reflects the academic plan’s analysis rather than a current policy audit, and repository acceptance was not assumed.',
+      'The summary presents the four outputs in a data table and the lifecycle as an ordered sequence.',
+      'Planning status and repository roles are expressed in text as well as visually.',
     ],
     evidence: {
       type: 'dmp-summary',
-      kicker: 'Portfolio evidence · Public derivative',
+      kicker: 'Academic project · Data stewardship',
       title: 'Data stewardship plan at a glance',
       scopeLabel: 'Proposed research context',
       scope:
-        'Academic data management plan for a proposed study of AI use in small-scale agriculture. The plan models data stewardship decisions; the study was not conducted.',
+        'Developed for a proposed study of AI use in small-scale agriculture, the plan covers four anticipated research outputs and their stewardship.',
       outputs: [
         {
           name: 'Analyzed Data',
@@ -109,7 +104,6 @@ export const projects = [
             'DOI anticipated',
             'Deposit preparation considered',
             'No storage cost anticipated',
-            'Acceptance was not assumed',
           ],
         },
         {
@@ -125,7 +119,7 @@ export const projects = [
         },
       ],
       repositoryNote:
-        'Repository evaluation reflects the academic plan’s analysis, not a current policy audit.',
+        'Repository choices reflect the 2026 academic analysis and would need confirmation before an actual deposit.',
       stewardship: [
         'Consent and reuse expectations planned before collection',
         'Identifiers separated from research data',
@@ -134,10 +128,8 @@ export const projects = [
         'Public sharing limited to approved anonymized outputs',
         'Repository deposit planned for discovery and preservation',
       ],
-      provenance:
-        'Portfolio derivative based on a 2026 academic DMP created with DMP Tool using a Digital Curation Centre template. Original source artifacts are retained privately.',
       caption:
-        'This summary distills an academic plan for a proposed study of AI use in small-scale agriculture. It connects four planned research outputs with lifecycle decisions, a sanitized DMP Roadmap JSON excerpt, and repository evaluation; the study was not conducted and produced no findings.',
+        'A summary of four planned research outputs, their lifecycle and stewardship requirements, a DMP Roadmap JSON excerpt, and repository options.',
     },
   },
   {
@@ -147,16 +139,16 @@ export const projects = [
     year: '2024',
     context: 'Graduate practicum · Spring 2024',
     summary:
-      'An applied public-library practicum that expanded an existing Spanish-language collection by connecting community-needs assessment, evidence-informed title research, collaborative acquisition, cataloging, discovery, and outreach.',
+      'An applied public-library practicum that expanded an existing Spanish-language collection through community-needs assessment, title research, collaborative acquisition, cataloging, discovery, and outreach.',
     challenge:
       'Expand access to Spanish-language and bilingual materials within the library’s existing collection, budget, cataloging workflows, and public discovery systems.',
     role:
-      'Initiated and led the local practicum implementation, working with library staff, professional mentors, earlier course collaborators, and community members on selection, acquisition, cataloging, discovery, and outreach.',
+      'Led the practicum’s local implementation in collaboration with library staff, professional mentors, earlier course collaborators, and community members.',
     approach:
-      'Combined public demographic information with direct community engagement; researched Spanish-language and bilingual materials; organized recommendations in a public LibGuide; worked with the library director on budget-constrained ordering; cataloged and processed materials in Atriuum under staff guidance; improved OPAC and website discovery; and initiated the 1000 Libros donation campaign.',
+      'Combined public demographic information with community engagement to identify collection needs and research Spanish-language and bilingual titles. Organized recommendations in a public LibGuide, worked with the library director on ordering, cataloged and processed materials in Atriuum under staff guidance, improved online discovery, and initiated the 1000 Libros campaign.',
     methods: [
       'Community-needs assessment and direct engagement',
-      'Evidence-informed collection development',
+      'Collection development research',
       'Spanish-language and bilingual title research',
       'LibGuide recommendation design',
       'Budget-constrained acquisitions',
@@ -172,24 +164,14 @@ export const projects = [
       '1000 Libros donation campaign',
     ],
     result:
-      'The library director publicly estimated that close to 100 books were ordered through the collaborative project using a $1,000 library allocation. Public reporting later documented continued collection use and at least one post-practicum volunteer program; no quantified circulation increase or exact later collection total is claimed.',
+      'Working with the library director and staff, the project used a $1,000 library allocation to order close to 100 books, according to the director’s public estimate.',
     provenance: [
-      'The public evidence is a self-authored derivative of the documented practicum process. The private evaluation and original poster remain unpublished.',
-      'Earlier collaborative graduate coursework informed the community analysis. The library director approved and funded institutional actions; library staff and retired librarians provided cataloging and processing guidance; professional mentors supplied resources and advice; and community members contributed needs information.',
-      'The approximate order count is attributed to the library director’s public estimate. It is neither an exact personal-selection count nor a later collection total.',
-      'Public LibGuide, conference, institutional, and local-news pages are linked rather than reproduced; third-party book covers, descriptions, article text, and photographs are excluded.',
+      'The library director approved the acquisition budget and collaborative ordering; staff and retired librarians guided cataloging and processing. Professional mentors, earlier course collaborators, and community members informed selection and needs assessment.',
+      'The linked LibGuide, conference listing, institutional profile, and local reporting document the project and later library activity.',
     ],
     accessibility: [
-      'The evidence artifact presents the eight-stage process as a semantic ordered list whose meaning does not depend on arrows, color, or hover.',
-      'Metrics, implemented and planned outreach, collaboration boundaries, and later-activity boundaries are represented in text.',
-      'The text-first layout stacks without horizontal overflow at narrow viewport widths and retains logical keyboard and reading order.',
-    ],
-    limitations: [
-      '“Close to 100” is an approximate estimate reported publicly by the library director; purchasing was collaborative and institutional.',
-      'LibGuide recommendations, WorldCat link instances, ordered books, later donations, additional purchases, and later collection totals are not interchangeable.',
-      'No quantified circulation increase, exact later collection size, or completion of the 1,000-book campaign goal is claimed.',
-      'Post-practicum use and volunteer activity are later organizational developments, not all practicum deliverables or outcomes attributable solely to Jeremiah.',
-      'The community-needs work does not establish an official demographic rate, language proficiency, or a formal institutional collection-development policy.',
+      'The eight-stage process is presented as ordered text, with no information dependent on color or hover.',
+      'The layout preserves reading and keyboard order and stacks at narrow widths.',
     ],
     links: [
       {
@@ -211,10 +193,10 @@ export const projects = [
     ],
     evidence: {
       type: 'collection-development',
-      kicker: 'Portfolio evidence · Applied information-service practice',
+      kicker: 'Graduate practicum · Collection development',
       title: 'From Community Need to Collection Access',
       framing:
-        'Spring 2024 graduate practicum in an operating public library. The project expanded an existing collection through collaborative, staff-authorized work; post-practicum use and programming are identified as later developments.',
+        'During this Spring 2024 practicum, the library expanded an existing Spanish-language collection through collaborative research, acquisition, cataloging, discovery, and outreach.',
       metrics: [
         {
           value: '$1,000',
@@ -226,34 +208,27 @@ export const projects = [
         },
       ],
       metricNote:
-        'Recommendation, ordering, and later collection totals overlap but are not interchangeable; no exact personal-selection or post-practicum growth total is claimed.',
+        'The close-to-100 figure is the library director’s approximate public estimate for books ordered collaboratively through the project.',
       process: [
         {
           title: 'Community need',
           description:
             'Combined public demographic information with direct community engagement to assess Spanish-language collection and service needs.',
-          note:
-            'The public derivative excludes informal population estimates and demographic speculation.',
         },
         {
           title: 'Selection research',
           description:
             'Consulted REFORMA and professional recommendations, publisher and bookseller sources, award and bestseller lists, notable authors, and children’s, juvenile, and adult materials across bilingual works, translations, and original Spanish-language works.',
-          note:
-            'The research informed title recommendations; it was not a formal institutional collection-development policy.',
         },
         {
           title: 'LibGuide recommendations',
           description:
             'Organized candidate titles and selection sources in a public LibGuide that served as a recommendation resource, visual advocacy tool, and secondary discovery resource.',
-          note: 'WorldCat link instances represent recommendations, not verified purchases.',
         },
         {
           title: 'Budget & ordering',
           description:
-            'Researched and organized title recommendations and worked with the library director to order close to 100 books through a $1,000 library allocation.',
-          note:
-            'The order count is the director’s approximate public estimate; purchasing was collaborative and institutional.',
+            'Researched and organized title recommendations and worked with the library director to select purchases within the acquisition budget.',
         },
         {
           title: 'Cataloging & processing',
@@ -264,21 +239,16 @@ export const projects = [
           title: 'OPAC / website discovery',
           description:
             'Added collection-related content, improved connections among library web resources, worked with a localized OPAC interface, and made the collection easier to locate and promote online.',
-          note: 'This was information-access and discovery work, not a web-development project.',
         },
         {
           title: '1000 Libros outreach',
           description:
             'Initiated a donation campaign intended to increase collection visibility and invite continued community support.',
-          note:
-            'Campaign initiation is distinct from planned radio, flyer, social-media, QR-analytics, and grant activity.',
         },
         {
-          title: 'Post-practicum use & activity',
+          title: 'Continued library activity',
           description:
-            'Public reporting later documented continued collection use and at least one post-practicum volunteer program.',
-          note:
-            'Later organizational activity is not treated as a practicum deliverable or attributed solely to Jeremiah.',
+            'After the practicum, the library continued to use and develop the collection through donations, additional purchases, and programming; public reporting documented at least one volunteer program.',
         },
       ],
       collaboration: [
@@ -294,9 +264,9 @@ export const projects = [
         {
           title: 'Library staff',
           items: [
-            'Provided institutional approval and implementation authority',
-            'Allocated the budget and collaborated on ordering',
-            'Provided cataloging and processing instruction and guidance',
+            'Approved the project and guided implementation',
+            'Allocated the acquisition budget and collaborated on ordering',
+            'Provided cataloging and processing instruction',
           ],
         },
         {
@@ -312,7 +282,6 @@ export const projects = [
         implemented: [
           'Initiated the 1000 Libros donation campaign',
           'Improved collection visibility through library discovery channels',
-          'Later public reporting documented the collection and campaign',
         ],
         planned: [
           'Additional flyer, Spanish-language radio, social-media, and community-organization outreach',
@@ -321,11 +290,9 @@ export const projects = [
         ],
       },
       dissemination:
-        'The official 2025 ALA Diversity Fair program listed a poster drawing on the practicum’s lessons, with Jeremiah as the sole listed author/presenter. This derivative does not independently claim attendance or delivery.',
-      provenance:
-        'Self-authored portfolio process summary based on the documented Spring 2024 practicum and linked public evidence. Private evaluation material, the original poster, third-party images, and copyrighted article or LibGuide content are not reproduced.',
+        'The official 2025 ALA Diversity Fair program lists Jeremiah as the sole author and presenter for a poster drawing on the practicum’s lessons.',
       caption:
-        'This process summary traces a Spring 2024 graduate practicum that expanded an existing Spanish-language collection at Lenoir City Public Library. Community analysis and direct engagement informed title research, a public LibGuide, collaborative ordering, cataloging and processing, discovery improvements, and the 1000 Libros outreach campaign. The library director later estimated that close to 100 books were ordered through the project; later collection growth is not attributed solely to the practicum.',
+        'This eight-stage summary follows the practicum from community-needs assessment through title research, collaborative ordering, cataloging, online discovery, and the 1000 Libros campaign.',
     },
   },
   {
@@ -335,11 +302,11 @@ export const projects = [
     year: '2025',
     context: 'Academic geospatial metadata project',
     summary:
-      'An academic geospatial-metadata project describing a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. The work adapted USGS source metadata into an FGDC CSDGM-structured XML record, added selected descriptive metadata, and documented review decisions. It did not involve LiDAR acquisition, processing, or advanced GIS analysis.',
+      'Using the accompanying USGS metadata as a starting point, this academic project developed an FGDC CSDGM XML record for a 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. The work added place keywords and reviewed selected fields against FGDC guidance.',
     challenge:
-      'Represent a complex federal scientific resource in structured metadata while preserving source provenance and distinguishing inherited facts from added descriptive choices.',
+      'Describe a complex federal scientific resource in structured metadata and refine selected elements for place, spatial reference, access, and distribution.',
     role:
-      'Selected the tile, adapted USGS source metadata with the USGS Metadata Wizard, added specific place keywords, reviewed selected fields against FGDC guidance, and documented the rationale.',
+      'Selected the tile, adapted USGS source metadata with the USGS Metadata Wizard, added specific place keywords, and documented the record’s structure and rationale.',
     approach:
       'The XML record contains 194 total element nodes, including repeated and container elements, across seven top-level CSDGM sections. It represents geographic bounding extent, horizontal and vertical reference fields, source-derived data-quality fields, access and use constraints, and distribution information.',
     methods: [
@@ -353,26 +320,19 @@ export const projects = [
       'Metadata rationale report',
     ],
     provenance: [
-      'USGS originated the LiDAR resource and much of its descriptive metadata; the academic record adapts that source material rather than claiming original authorship of every statement.',
-      'The public evidence is a self-authored metadata-anatomy derivative. The original academic XML and report remain private.',
+      'Most descriptive content originated in the USGS source metadata. The academic record adapted that material with the USGS Metadata Wizard and added selected place keywords and review decisions.',
     ],
     accessibility: [
-      'The metadata-anatomy evidence uses semantic headings, an ordered section index, and labelled XML code blocks.',
-      'The source boundary, evidence path, and limitations are stated in text rather than communicated by color alone.',
-    ],
-    limitations: [
-      'Source metadata forms much of the record.',
-      'Selected fields were reviewed, but no full schema-validation evidence is available.',
-      'The supplied project sources do not document preservation or reuse planning.',
-      'No LiDAR processing or advanced GIS analysis was performed.',
+      'The metadata structure is presented with semantic headings, an ordered section index, and labelled XML excerpts.',
+      'The XML excerpts preserve markup as selectable, readable text.',
     ],
     evidence: {
       type: 'metadata-anatomy',
-      kicker: 'Portfolio evidence · Metadata structure',
+      kicker: 'Academic project · Metadata structure',
       title: 'USGS 3DEP Metadata Anatomy',
       resource:
-        'USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. This academic exercise adapted source metadata into an FGDC CSDGM-structured XML record.',
-      boundary: 'Metadata/documentation work — not LiDAR processing or advanced GIS analysis.',
+        'FGDC CSDGM XML record for a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico, developed from accompanying USGS metadata.',
+      focus: 'The project focused on metadata structure, description, and documentation.',
       nodeCount: '194',
       nodeCountLabel:
         'total XML element nodes, including repeated and container elements, across seven top-level CSDGM sections',
@@ -423,7 +383,7 @@ export const projects = [
       ],
       excerpts: [
         {
-          title: 'Sanitized structural excerpt',
+          title: 'Selected structural excerpt',
           code: `<metadata>
   <idinfo>…</idinfo>
   <dataqual>…</dataqual>
@@ -461,27 +421,17 @@ export const projects = [
       representationNotes: [
         'Access and use constraints are represented without reproducing source boilerplate',
         'Digital format and online network access are represented; no fee is listed',
-        'Source-derived quality statements are identified as metadata content, not accuracy testing',
+        'Source-derived quality statements are identified within the record',
       ],
-      evidencePath: [
+      metadataProcess: [
         'USGS source context',
         'Adapt source metadata',
         'Add / refine descriptive fields',
         'Review selected fields against FGDC guidance',
         'Document access and distribution',
       ],
-      evidencePathNote:
-        'This is an evidence path, not a data lifecycle. The supplied sources do not document preservation or reuse planning.',
-      limitations: [
-        'Source metadata forms much of the record',
-        'Selected fields were reviewed, but no full schema-validation evidence is available',
-        'The supplied project sources do not document preservation or reuse planning',
-        'No LiDAR processing or advanced GIS analysis was performed',
-      ],
-      provenance:
-        'Portfolio derivative based on Jeremiah King’s 2025 academic metadata record and accompanying rationale report. Most descriptive content was adapted from USGS source metadata, and the record was created with the USGS Metadata Wizard. Original academic files remain private.',
       caption:
-        'This metadata-anatomy figure summarizes a 2025 academic XML record for a USGS 3DEP LiDAR point-cloud tile near Playa Punta Arenas, Puerto Rico. It shows seven FGDC CSDGM sections and the path from USGS source context through metadata adaptation, selected field review, and distribution description. The project demonstrates metadata and curation practice rather than LiDAR processing or advanced GIS analysis.',
+        'Seven FGDC CSDGM sections and the process used to adapt USGS source metadata, refine description, and document access and distribution.',
     },
   },
   {
@@ -493,50 +443,42 @@ export const projects = [
     summary:
       'Course-guided OpenRefine work applying facets, reviewed clustering, GREL and regular-expression transformations, one Crossref journal lookup, and Publisher-to-VIAF reconciliation to a supplied sample of 1,001 article records.',
     challenge:
-      'Apply a supplied cleaning sequence while distinguishing manually reviewed author-name merges from unverified external reconciliation candidates.',
+      'Clean and reconcile bibliographic fields while keeping manually reviewed author-name merges distinct from bulk VIAF candidates.',
     role:
-      'Applied and documented the supplied workflow, reviewed selected author-name clusters, configured transformations and external lookups, and explored Publisher-to-VIAF reconciliation. The dataset, exercise sequence, and example expressions were supplied.',
+      'Carried out and documented the workflow, reviewed selected author-name clusters, configured transformations and external lookups, and explored Publisher-to-VIAF reconciliation.',
     approach:
-      'Inspected a supplied DOAJ article-metadata sample with facets; split multi-valued author cells; reviewed fingerprint, n-gram, Metaphone3, and Cologne candidate clusters; applied supplied GREL and regular-expression operations; performed one ISSN-based Crossref journal lookup; and reconciled Publisher strings to VIAF Corporate Name candidates through Conciliator.',
+      'Inspected the DOAJ article-metadata sample with facets and split multi-valued author cells. Reviewed fingerprint, n-gram, Metaphone3, and Cologne candidate clusters, then applied the exercise’s GREL and regular-expression operations. Performed an ISSN-based Crossref journal lookup and reconciled Publisher strings to VIAF Corporate Name candidates through Conciliator.',
     methods: [
       'OpenRefine facets and manual cluster review',
       'Fingerprint and n-gram fingerprint clustering',
       'Metaphone3 and Cologne phonetic clustering',
-      'Course-supplied GREL and regular expressions',
+      'GREL and regular expressions',
       'Date parsing and formatting',
-      'One Crossref REST JSON lookup',
+      'Crossref REST JSON lookup',
       'VIAF Corporate Name reconciliation through Conciliator',
     ],
     deliverables: [
       'Documented OpenRefine cleaning and reconciliation exercise',
-      'Preserved transformation histories across three private OpenRefine project copies',
-      'Publisher-to-VIAF best-candidate reconciliation output retained privately',
+      'Transformation histories preserved across three OpenRefine project copies',
+      'Publisher-to-VIAF reconciliation results retained for analysis',
     ],
     result:
-      'Preserved OpenRefine histories document selected transformations across 1,001 article records. A separate VIAF exercise retained best-candidate identifiers for 965 Publisher rows and left 36 unmatched; no reconciliation-accuracy evaluation was performed.',
+      'Preserved OpenRefine histories document selected transformations across 1,001 article records. VIAF reconciliation produced best-candidate identifiers for 965 Publisher rows and left 36 unmatched.',
     provenance: [
-      'The article-metadata sample, exercise sequence, method choices, and example expressions were supplied through instructional material. The public artifact is a self-authored summary of the completed workflow, not the original exercise or data.',
-      'Crossref supplied journal metadata for one lookup. VIAF was the authority-data source, queried through the third-party Conciliator reconciliation service.',
-      'Original records, reports, API output, reconciliation mappings, and OpenRefine project files remain private; dataset redistribution terms were not established.',
+      'The article-metadata sample, exercise sequence, method choices, and example expressions were supplied for the course.',
+      'Crossref supplied journal metadata for the lookup. VIAF candidates were retrieved through the third-party Conciliator service.',
+      'The source dataset’s redistribution terms were not established, so the portfolio presents a summary and aggregate counts rather than the records.',
     ],
     accessibility: [
-      'The public derivative represents the workflow as an ordered process and the clustering results as a data table.',
-      'Expressions use labelled code blocks, while candidate, review, and repeatability boundaries are stated in text rather than communicated by color.',
-    ],
-    limitations: [
-      'The dataset, workflow design, method choices, and example expressions were supplied as part of a course-guided exercise.',
-      'The preserved histories are only partially repeatable because work is divided across three project copies and facets are not always recorded as history operations.',
-      'Clustering generated candidate similarities; only selected author-name merges were manually reviewed.',
-      'Crossref was used for one journal lookup, not across all 1,001 records.',
-      'The 965 VIAF best-candidate mappings were not independently validated and do not establish correct authority matches or an accuracy rate.',
-      'External-service results may change, and the source dataset’s redistribution terms remain unresolved.',
+      'The workflow is presented as an ordered sequence, and clustering results appear in a data table.',
+      'Code examples are labelled, and reviewed merges are distinguished from VIAF candidates in text.',
     ],
     evidence: {
       type: 'bibliographic-workflow',
-      kicker: 'Portfolio evidence · Record-level data quality',
+      kicker: 'Academic project · Record-level data quality',
       title: 'Bibliographic Cleaning & Reconciliation Workflow',
-      boundary: {
-        label: 'Project boundary',
+      courseContext: {
+        label: 'Course context',
         description:
           'Course-guided 2026 OpenRefine exercise using a supplied sample of DOAJ article metadata. The dataset, exercise sequence, method choices, and example expressions were supplied.',
       },
@@ -555,7 +497,7 @@ export const projects = [
         },
       ],
       metricNote:
-        'The 4,009 working rows reflect split multi-valued author cells; they do not represent 4,009 bibliographic records.',
+        'Splitting multi-valued author cells expanded the working table to 4,009 rows while the source dataset remained 1,001 article records.',
       workflow: [
         {
           title: 'Inspect',
@@ -568,19 +510,15 @@ export const projects = [
         },
         {
           title: 'Transform',
-          description: 'Apply supplied GREL, regular-expression, date, and ordering operations.',
+          description: 'Apply GREL, regular-expression, date, and ordering operations.',
         },
         {
           title: 'External lookup',
-          description: 'Perform one ISSN-based Crossref journal-metadata lookup.',
+          description: 'Perform an ISSN-based Crossref journal-metadata lookup.',
         },
         {
           title: 'Authority reconciliation',
           description: 'Request VIAF Corporate Name candidates for Publisher strings through Conciliator.',
-        },
-        {
-          title: 'Review boundary',
-          description: 'Separate reviewed author merges from unverified bulk best-candidate mappings.',
         },
       ],
       facets: [
@@ -600,8 +538,6 @@ export const projects = [
           label: 'Records without DOI',
         },
       ],
-      doiNote:
-        'Facet counts describe fields in the supplied article metadata; licence values do not establish a licence for redistributing the dataset.',
       clusters: [
         {
           method: 'Fingerprint',
@@ -629,7 +565,7 @@ export const projects = [
         },
       ],
       clusterNote:
-        'Clustering generated candidate similarities. Jeremiah reviewed and accepted selected author-name merges; the counts do not establish that every candidate represented one verified identity.',
+        'Jeremiah manually reviewed selected author-name candidates and accepted the merge groups shown here.',
       transformations: {
         types: [
           'Language-code edit',
@@ -640,81 +576,53 @@ export const projects = [
         ],
         expressions: [
           {
-            label: 'Course-supplied whitespace expression',
+            label: 'Whitespace expression',
             code: String.raw`value.replace(/[\p{Zs}\s]+/,' ')`,
           },
           {
-            label: 'Course-supplied date-format expression',
+            label: 'Date-format expression',
             code: 'value.toString("dd MMMM yyyy")',
           },
         ],
         expressionNote:
-          'The example expressions were supplied through instructional material and applied during the exercise; no independent authorship claim is made.',
+          'These expressions were supplied for the course exercise and applied in OpenRefine.',
         examples: [
           {
             field: 'Language',
             before: 'English',
             after: 'EN',
-            note:
-              'The transformation occurred in the exercise; the language-code policy was not independently evaluated.',
           },
           {
             field: 'Date',
             before: '01/11/2015',
             after: '11 January 2015',
-            note:
-              'The operation is documented; the original date-locale interpretation was not independently validated.',
           },
         ],
       },
       crossref: {
         summary:
-          'One starred record was isolated for an ISSN-based Crossref journal-metadata lookup; returned JSON was stored and message.title was extracted.',
+          'For one starred record, an ISSN-based Crossref request returned journal metadata; the exercise stored the JSON and extracted message.title.',
         path: ['ISSN', 'Crossref /journals/{ISSN}', 'message.title', 'Journal Title'],
-        note:
-          'This was one journal lookup—not a lookup across all 1,001 records and not authority reconciliation. The raw response remains private.',
       },
       viaf: {
         summary:
-          'Publisher strings were reconciled to VIAF Corporate Name candidates through the third-party Conciliator service.',
+          'Publisher strings were reconciled against VIAF Corporate Name candidates through Conciliator.',
         metrics: [
           {
             value: '965',
-            label: 'Rows retaining best-candidate mappings',
+            label: 'Rows with a best candidate',
           },
           {
             value: '36',
             label: 'Rows left unmatched',
           },
         ],
-        note:
-          'Best-candidate mappings are workflow output, not independently verified authority matches.',
+        note: 'The best candidates were not validated row by row.',
       },
-      reviewBoundary:
-        'Selected author-name clusters were manually reviewed. The final VIAF “match each cell to its best candidate” operation was not independently validated row by row; candidate does not mean verified identity.',
-      repeatability: {
-        summary:
-          'Preserved OpenRefine histories make selected operations partially repeatable, not fully reproducible.',
-        details: [
-          'Work is divided across three private OpenRefine project copies',
-          'Facets are not always represented as history operations',
-          'Clustering algorithms are inferred from the documented exercise sequence',
-          'Crossref, VIAF, and Conciliator depend on live services whose results may change',
-        ],
-      },
-      limitations: [
-        'Course-supplied dataset and workflow design',
-        'Example expressions supplied through instructional material',
-        'Partially repeatable histories across multiple project copies',
-        'One Crossref lookup only',
-        'VIAF mappings are unverified best candidates',
-        'No reconciliation-accuracy metric',
-        'Dataset redistribution terms unresolved',
-      ],
-      provenance:
-        'Self-authored portfolio derivative based on the documented 2026 exercise and preserved OpenRefine histories. Original records, author names, article titles, identifiers, project files, API output, mappings, and instructional material remain private.',
+      reproducibility:
+        'Three preserved OpenRefine project histories document selected transformations. Facets and results from live external services cannot be recreated from the histories alone.',
       caption:
-        'This workflow summary presents a 2026 academic OpenRefine exercise using 1,001 supplied article records. It traces facet-based inspection, reviewed author-name clustering, GREL and regular-expression transformations, one Crossref journal lookup, and Publisher-to-VIAF reconciliation. Preserved histories document the operations, but external candidates were not independently validated and no reconciliation-accuracy rate is available.',
+        'An OpenRefine workflow for 1,001 supplied article records, covering facets, reviewed author-name clustering, transformations, one Crossref lookup, and Publisher-to-VIAF reconciliation.',
     },
   },
   {
@@ -726,11 +634,11 @@ export const projects = [
     summary:
       'A 2024 academic SQLite prototype for multilingual book-recommendation data, with 26 user-defined tables spanning core entities, composite-key junctions, and imported reference data.',
     challenge:
-      'Documented 16 intended business rules and implemented the prototype’s principal entity and junction relationships; the surviving schema does not implement every documented relationship.',
+      'Translate 16 documented business rules into a relational design for multilingual book-recommendation data.',
     role:
       'Implemented and documented the prototype, modeled its principal relationships through composite-key junctions, integrated credited reference data, and created an ER model.',
     approach:
-      'Combined 10 core tables, 13 junction tables, and three reference tables using primary keys, 27 declared foreign keys, and nine explicit user-created indexes. The structure demonstrates relational modeling and reference-data integration rather than a production system.',
+      'Combined 10 core tables, 13 junction tables, and three reference tables using primary keys, 27 declared foreign keys, and nine explicit user-created indexes. The prototype uses seven BOOK records alongside imported language and country reference data.',
     methods: [
       'SQLite',
       'SQL',
@@ -745,32 +653,23 @@ export const projects = [
       'ER model and design documentation',
     ],
     result:
-      'A current read-only schema audit found 26 user-defined tables, 27 declared foreign keys, nine explicit user-created indexes, and zero rows returned by PRAGMA foreign_key_check.',
+      'A later integrity check of the preserved database returned no foreign-key violations. The implemented schema captures the principal entity and junction relationships; two documented language relationships are absent.',
     aiAssistance:
-      'Some test records were created with AI assistance and acknowledged in the source report as inaccurate. This public case study uses schema and count evidence only and excludes those records.',
+      'AI assisted with generating some test records, which the project report identifies as inaccurate. The database summary relies on schema structure and aggregate counts rather than those records.',
     provenance: [
-      'Three imported reference tables contain 80,381 language and country lookup rows: Language_Index (72,524), LANGUAGE_CODES (7,614), and COUNTRY_CODES (243). These are reference data, not books; the BOOK table contains seven rows.',
-      'The report credits an external source and states that the reference data were used with permission, but public redistribution rights were not independently established. The private database, report, ER diagram, imported rows, and source URL remain unpublished.',
-      'No assignment prompt or starter schema was supplied, so the available evidence does not support claiming that every aspect of the design originated from scratch.',
+      'Three imported reference tables contribute 80,381 language and country lookup rows: Language_Index (72,524), LANGUAGE_CODES (7,614), and COUNTRY_CODES (243).',
+      'The report credits an external source and states that the reference data were used with permission for the course project. They are summarized here rather than republished.',
     ],
     accessibility: [
-      'The public architecture derivative presents relationships as ordered text paths as well as visual groupings.',
-      'Counts, evidence boundaries, and the integrity result remain available in the figure’s logical reading order and do not depend on color or hover.',
-    ],
-    limitations: [
-      'This is an academic prototype with seven BOOK rows, not a production library system.',
-      'The 80,381 imported rows are language and country reference or lookup data, not a book catalog.',
-      'The surviving schema does not implement every one of the 16 intended business rules.',
-      'Some AI-assisted test records were acknowledged as inaccurate and are excluded from the public evidence.',
-      'The original report’s permission statement was not independently verified as a basis for public redistribution.',
-      'A current PRAGMA foreign_key_check returned zero rows, but foreign-key enforcement in the original connection was connection-specific and cannot be established from that result.',
+      'Relationships appear as ordered text paths as well as visual groupings.',
+      'Counts and the integrity result remain in logical reading order and do not depend on color or hover.',
     ],
     evidence: {
       type: 'database-architecture',
-      kicker: 'Portfolio evidence · Relational architecture',
+      kicker: 'Academic project · Relational architecture',
       title: 'Multilingual Library Database Architecture',
       framing:
-        '2024 academic SQLite prototype for multilingual book-recommendation data. The implemented structure demonstrates relational modeling and reference-data integration—not a production catalog or recommendation system.',
+        'A 2024 SQLite prototype that models multilingual book-recommendation data through core entities, junction tables, and imported reference data.',
       metrics: [
         { value: '26', label: 'user-defined tables' },
         { value: '10', label: 'core / domain tables' },
@@ -782,7 +681,7 @@ export const projects = [
       centralEntity: {
         name: 'BOOK',
         count: '7 rows',
-        note: 'Central domain entity · test-scale academic data',
+        note: 'Sample records used to exercise the prototype',
       },
       bookRelationships: [
         { junction: 'BOOK_AUTHOR', entity: 'AUTHOR' },
@@ -807,25 +706,20 @@ export const projects = [
         { name: 'COUNTRY_CODES', rows: '243' },
       ],
       referenceTotal: '80,381',
-      referenceBoundary: 'Reference / lookup rows—not books.',
+      referenceDescription:
+        'These imported language and country lookup rows support the schema.',
       referenceRelationship: 'LANGUAGE_CODES declares a foreign key to COUNTRY_CODES.',
       integrity: {
-        label: 'Current read-only integrity audit',
+        label: 'Preserved-database integrity check',
         code: 'PRAGMA foreign_key_check;\n→ 0 rows returned',
-        note: 'SQLite foreign-key enforcement is connection-specific, so this result does not establish how every original project session was configured.',
+        note: 'A later PRAGMA foreign_key_check returned no violations in the preserved database.',
       },
       rules:
-        'The project report documents 16 intended business rules; the implemented database captures the principal entity and junction relationships, but not every documented relationship.',
+        'The design documents 16 intended business rules, and the implemented database captures the principal entity and junction relationships.',
       implementationGap:
         'Two documented language relationships are absent from the implemented SQLite schema.',
-      aiBoundary:
-        'The report documents AI-assisted test-record generation and acknowledges inaccuracies in some sample data. This public artifact therefore uses schema structure and audited counts—not test bibliographic records—as evidence.',
-      provenance:
-        'The academic report credits the imported language and country reference tables to an external source and states they were used with permission. Public redistribution rights were not independently established, so this portfolio derivative shows only schema-level counts and structure.',
-      evidenceBasis:
-        'Self-authored portfolio architecture derivative based on the verified SQLite structure and a current read-only schema audit.',
       caption:
-        'This architecture summary presents a 2024 academic SQLite prototype for multilingual book-recommendation data. The implemented schema contains 26 user-defined tables, including junction tables connecting books with authors, publishers, languages, genres, and other entities. Three imported reference tables contain 80,381 language-name, language-code, and country-code rows; that figure does not represent books. A current read-only audit returned no foreign-key violations. The prototype is not a production library system.',
+        'A 26-table SQLite prototype connecting books to authors, publishers, languages, genres, and other entities through composite-key junctions, with imported reference data and a later integrity check.',
     },
   },
   {
@@ -839,9 +733,9 @@ export const projects = [
     challenge:
       'Make a dense historical network explorable while coordinating data transformation, 3D rendering, selection, filtering, accessibility, and application lifecycle behavior.',
     role:
-      'Directed, tested, and iteratively refined the project, making decisions about data framing, interaction, accessibility, provenance, and final technical judgment.',
+      'Set the project direction, tested the running application, and guided iterative work on data framing, interaction, accessibility, provenance, and technical tradeoffs.',
     approach:
-      'Parsed and indexed airport and route records, resolved endpoints, deduplicated and weighted connections, and coordinated filtering and selection across globe and force-directed views. Current pointer selection uses a depth-aware GPU picking pass.',
+      'Parsed and indexed airport and route records, resolved endpoints, deduplicated and weighted connections, and coordinated filtering and selection across globe and force-directed views. Pointer selection uses a depth-aware GPU picking pass.',
     methods: [
       'React and Vite',
       'D3 data processing and force layout',
@@ -856,9 +750,9 @@ export const projects = [
       'Public GitHub Pages demonstration',
     ],
     result:
-      'Delivered a public interactive portfolio visualization with documented source, licensing, accessibility, and implementation boundaries.',
+      'Published an interactive portfolio visualization with coordinated views, search, filtering, selection, and documented data sources and licensing.',
     provenance: [
-      'Uses historical OpenFlights airport and route data. OpenFlights states that its route data was last updated in June 2014; the application is not a source of current aviation information.',
+      'Uses OpenFlights airport and route data last updated in June 2014, so the visualization presents a historical network rather than current aviation service.',
       'The project repository documents OpenFlights ODbL/DbCL terms and additional terrain and boundary sources.',
     ],
     accessibility: [
@@ -867,11 +761,7 @@ export const projects = [
       'Reduced-motion behavior and non-color route-pattern cues',
     ],
     aiAssistance:
-      'Human-directed and substantially AI-assisted. Jeremiah set the direction, evaluated the running experience, guided iteration, and made final technical judgments.',
-    limitations: [
-      'The records describe a historical source dataset, not live routes, schedules, or operational service.',
-      'Implemented accessibility features do not constitute a WCAG conformance claim; broader manual assistive-technology and cross-browser validation remains outstanding.',
-    ],
+      'AI materially supported implementation. Jeremiah set the direction, tested the running application, guided iteration, and made final decisions about data framing, interaction, accessibility, and technical tradeoffs.',
     links: [
       {
         label: 'View live project',

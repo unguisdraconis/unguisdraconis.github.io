@@ -371,8 +371,7 @@ dd {
 
 .evidence-kicker,
 .evidence-code-label,
-.evidence-repository-role,
-.evidence-provenance > span {
+.evidence-repository-role {
   margin-bottom: 0.55rem;
   color: var(--copper-dark);
   font-size: 0.72rem;
@@ -542,7 +541,6 @@ dd {
   tab-size: 2;
 }
 
-.evidence-small-note,
 .evidence-policy-note {
   margin: 0.85rem 0 0;
   color: var(--ink-soft);
@@ -612,26 +610,6 @@ dd {
   border-top: 1px solid var(--rule);
 }
 
-.evidence-provenance {
-  display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr);
-  gap: 1rem;
-  padding: 1.25rem clamp(1.5rem, 4vw, 3rem);
-  border-top: 1px solid var(--rule-strong);
-  background: var(--paper-deep);
-}
-
-.evidence-provenance > span,
-.evidence-provenance p {
-  margin-bottom: 0;
-}
-
-.evidence-provenance p {
-  color: var(--ink-soft);
-  font-size: 0.74rem;
-  line-height: 1.5;
-}
-
 .evidence-figure > figcaption {
   margin-top: 0.75rem;
   max-width: 88ch;
@@ -660,8 +638,7 @@ dd {
   padding: clamp(1.1rem, 2.3vw, 1.65rem);
 }
 
-.metadata-kicker,
-.metadata-provenance > span {
+.metadata-kicker {
   margin-bottom: 0.45rem;
   color: var(--copper-dark);
   font-size: 0.75rem;
@@ -740,8 +717,7 @@ dd {
   border-top: 0;
 }
 
-.metadata-heading,
-.metadata-limitations h5 {
+.metadata-heading {
   margin-bottom: 0.65rem;
   color: var(--slate);
   font-size: 0.78rem;
@@ -869,8 +845,7 @@ dd {
   border-left: 1px solid var(--rule);
 }
 
-.metadata-notes-grid ul,
-.metadata-limitations ul {
+.metadata-notes-grid ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -925,60 +900,6 @@ dd {
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-}
-
-.metadata-path-note {
-  margin: 0.25rem 0 0;
-  color: var(--ink-soft);
-  font-size: 0.75rem;
-  line-height: 1.45;
-}
-
-.metadata-limitations {
-  padding: 0.7rem clamp(1.1rem, 2.3vw, 1.65rem);
-  border-top: 1px solid var(--rule);
-  background: rgba(231, 223, 210, 0.45);
-}
-
-.metadata-limitations h5 {
-  margin-bottom: 0.55rem;
-}
-
-.metadata-limitations ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.2rem;
-}
-
-.metadata-limitations li {
-  color: var(--ink-soft);
-  font-size: 0.75rem;
-}
-
-.metadata-limitations li::before {
-  margin-right: 0.4rem;
-  color: var(--copper-dark);
-  content: "—";
-}
-
-.metadata-provenance {
-  display: grid;
-  grid-template-columns: 6.5rem minmax(0, 1fr);
-  gap: 0.9rem;
-  padding: 0.7rem clamp(1.1rem, 2.3vw, 1.65rem);
-  border-top: 1px solid var(--rule-strong);
-  background: var(--paper-deep);
-}
-
-.metadata-provenance > span,
-.metadata-provenance p {
-  margin-bottom: 0;
-}
-
-.metadata-provenance p {
-  color: var(--ink-soft);
-  font-size: 0.75rem;
-  line-height: 1.5;
 }
 
 .metadata-evidence-figure > figcaption {
@@ -1084,8 +1005,7 @@ dd {
 .database-model,
 .database-additional,
 .database-reference,
-.database-audit-grid > section,
-.database-boundaries {
+.database-detail-grid > section {
   min-width: 0;
   padding: clamp(1rem, 2vw, 1.4rem) clamp(1.1rem, 2.3vw, 1.65rem);
   border-top: 1px solid var(--rule);
@@ -1262,8 +1182,7 @@ dd {
 }
 
 .database-reference-note,
-.database-audit-grid p,
-.database-boundaries p {
+.database-detail-grid p {
   color: var(--ink-soft);
   font-size: 0.76rem;
   line-height: 1.5;
@@ -1273,16 +1192,16 @@ dd {
   margin: 0.55rem 0 0;
 }
 
-.database-audit-grid {
+.database-detail-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.database-audit-grid > section + section {
+.database-detail-grid > section + section {
   border-left: 1px solid var(--rule);
 }
 
-.database-audit-grid p {
+.database-detail-grid p {
   margin: 0.55rem 0 0;
 }
 
@@ -1299,64 +1218,11 @@ dd {
   white-space: pre-wrap;
 }
 
-.database-audit-grid .database-gap-note {
+.database-detail-grid .database-gap-note {
   padding-top: 0.55rem;
   border-top: 1px solid var(--rule);
   color: var(--copper-dark);
   font-weight: 700;
-}
-
-.database-boundaries {
-  background: rgba(231, 223, 210, 0.45);
-}
-
-.database-boundaries > div {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.2rem;
-}
-
-.database-boundaries section + section {
-  padding-left: 1.2rem;
-  border-left: 1px solid var(--rule);
-}
-
-.database-boundaries h6 {
-  margin: 0 0 0.35rem;
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-
-.database-boundaries p {
-  margin: 0;
-}
-
-.database-evidence-basis {
-  display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr);
-  gap: 0.9rem;
-  padding: 0.7rem clamp(1.1rem, 2.3vw, 1.65rem);
-  border-top: 1px solid var(--rule-strong);
-  background: var(--paper-deep);
-}
-
-.database-evidence-basis > span,
-.database-evidence-basis p {
-  margin: 0;
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-
-.database-evidence-basis > span {
-  color: var(--copper-dark);
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.database-evidence-basis p {
-  color: var(--ink-soft);
 }
 
 .database-evidence-figure > figcaption {
@@ -1387,8 +1253,7 @@ dd {
   padding: clamp(1.1rem, 2.3vw, 1.65rem);
 }
 
-.lcpl-kicker,
-.lcpl-provenance > span {
+.lcpl-kicker {
   margin-bottom: 0.45rem;
   color: var(--copper-dark);
   font-size: 0.75rem;
@@ -1532,15 +1397,6 @@ dd {
   line-height: 1.5;
 }
 
-.lcpl-process-list .lcpl-stage-note {
-  margin-top: 0.55rem;
-  padding-left: 0.65rem;
-  border-left: 2px solid var(--moss);
-  color: var(--moss);
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
 .lcpl-collaboration-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1579,7 +1435,7 @@ dd {
   position: absolute;
   left: 0;
   color: var(--copper-dark);
-  content: "—";
+  content: "•";
 }
 
 .lcpl-outreach {
@@ -1608,26 +1464,6 @@ dd {
 
 .lcpl-dissemination .lcpl-heading {
   margin-bottom: 0.35rem;
-}
-
-.lcpl-provenance {
-  display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr);
-  gap: 0.9rem;
-  padding: 0.8rem clamp(1.1rem, 2.3vw, 1.65rem);
-  border-top: 1px solid var(--rule-strong);
-  background: var(--paper-deep);
-}
-
-.lcpl-provenance > span,
-.lcpl-provenance p {
-  margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.5;
-}
-
-.lcpl-provenance p {
-  color: var(--ink-soft);
 }
 
 .lcpl-evidence-figure > figcaption {
@@ -1660,8 +1496,7 @@ dd {
 }
 
 .bib-kicker,
-.bib-boundary > p:first-child,
-.bib-provenance > span {
+.bib-context > p:first-child {
   margin-bottom: 0.45rem;
   color: var(--copper-dark);
   font-size: 0.75rem;
@@ -1680,17 +1515,17 @@ dd {
   line-height: 1.02;
 }
 
-.bib-boundary {
+.bib-context {
   align-self: end;
   padding-left: 1rem;
   border-left: 2px solid var(--copper);
 }
 
-.bib-boundary p {
+.bib-context p {
   margin: 0;
 }
 
-.bib-boundary > p:last-child {
+.bib-context > p:last-child {
   color: var(--ink-soft);
   font-size: 0.9rem;
   line-height: 1.55;
@@ -1812,8 +1647,7 @@ dd {
 .bib-inspect-grid p,
 .bib-example-list p,
 .bib-service-summary,
-.bib-review-boundary p,
-.bib-notes-grid p {
+.bib-reproducibility p {
   margin: 0;
   color: var(--ink-soft);
   font-size: 0.875rem;
@@ -1841,16 +1675,14 @@ dd {
 }
 
 .bib-inspect-grid ul,
-.bib-operation-list,
-.bib-notes-grid ul {
+.bib-operation-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .bib-inspect-grid li,
-.bib-operation-list li,
-.bib-notes-grid li {
+.bib-operation-list li {
   position: relative;
   padding: 0.35rem 0 0.35rem 0.85rem;
   border-top: 1px solid var(--rule);
@@ -1860,12 +1692,11 @@ dd {
 }
 
 .bib-inspect-grid li::before,
-.bib-operation-list li::before,
-.bib-notes-grid li::before {
+.bib-operation-list li::before {
   position: absolute;
   left: 0;
   color: var(--copper-dark);
-  content: "—";
+  content: "•";
 }
 
 .bib-doi-counts,
@@ -1948,15 +1779,13 @@ dd {
 }
 
 .bib-operation-grid,
-.bib-service-grid,
-.bib-notes-grid {
+.bib-service-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .bib-operation-grid > .bib-section + .bib-section,
-.bib-service-grid > .bib-section + .bib-section,
-.bib-notes-grid > .bib-section + .bib-section {
+.bib-service-grid > .bib-section + .bib-section {
   border-left: 1px solid var(--rule);
 }
 
@@ -2042,47 +1871,6 @@ dd {
   color: var(--ink);
   font-size: 0.82rem;
   overflow-wrap: anywhere;
-}
-
-.bib-review-boundary {
-  padding: clamp(1rem, 2vw, 1.4rem) clamp(1.1rem, 2.3vw, 1.65rem);
-  border-top: 1px solid var(--rule-strong);
-  border-left: 0.28rem solid var(--copper);
-  background: var(--paper-deep);
-}
-
-.bib-review-boundary .bib-heading {
-  margin-bottom: 0.35rem;
-  color: var(--copper-dark);
-}
-
-.bib-review-boundary p {
-  max-width: 90ch;
-  color: var(--ink);
-}
-
-.bib-notes-grid .bib-section {
-  border-top-color: var(--rule-strong);
-}
-
-.bib-provenance {
-  display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr);
-  gap: 0.9rem;
-  padding: 0.8rem clamp(1.1rem, 2.3vw, 1.65rem);
-  border-top: 1px solid var(--rule-strong);
-  background: var(--paper-deep);
-}
-
-.bib-provenance > span,
-.bib-provenance p {
-  margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.5;
-}
-
-.bib-provenance p {
-  color: var(--ink-soft);
 }
 
 .bib-evidence-figure > figcaption {
@@ -2941,8 +2729,7 @@ dd {
 
   .database-masthead,
   .database-model-grid,
-  .database-audit-grid,
-  .database-boundaries > div {
+  .database-detail-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2970,14 +2757,7 @@ dd {
     border-left: 0;
   }
 
-  .database-audit-grid > section + section {
-    border-left: 0;
-  }
-
-  .database-boundaries section + section {
-    margin-top: 0.9rem;
-    padding: 0.9rem 0 0;
-    border-top: 1px solid var(--rule);
+  .database-detail-grid > section + section {
     border-left: 0;
   }
 
@@ -3023,8 +2803,7 @@ dd {
   .bib-workflow,
   .bib-inspect-grid,
   .bib-operation-grid,
-  .bib-service-grid,
-  .bib-notes-grid {
+  .bib-service-grid {
     grid-template-columns: 1fr;
   }
 
@@ -3046,8 +2825,7 @@ dd {
   }
 
   .bib-operation-grid > .bib-section + .bib-section,
-  .bib-service-grid > .bib-section + .bib-section,
-  .bib-notes-grid > .bib-section + .bib-section {
+  .bib-service-grid > .bib-section + .bib-section {
     border-left: 0;
   }
 
@@ -3370,20 +3148,12 @@ dd {
     white-space: pre-wrap;
   }
 
-  .evidence-provenance {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-    padding: 1rem 1.15rem;
-  }
-
   .metadata-masthead,
   .metadata-section {
     padding: 1.1rem;
   }
 
-  .metadata-count,
-  .metadata-limitations,
-  .metadata-provenance {
+  .metadata-count {
     padding-inline: 1.1rem;
   }
 
@@ -3397,17 +3167,11 @@ dd {
     gap: 0.1rem;
   }
 
-  .metadata-provenance {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
-
   .database-masthead,
   .database-model,
   .database-additional,
   .database-reference,
-  .database-audit-grid > section,
-  .database-boundaries {
+  .database-detail-grid > section {
     padding: 1.1rem;
   }
 
@@ -3448,12 +3212,6 @@ dd {
     border-left: 0;
   }
 
-  .database-evidence-basis {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-    padding: 0.8rem 1.1rem;
-  }
-
   .lcpl-masthead,
   .lcpl-metrics-section,
   .lcpl-section,
@@ -3474,20 +3232,13 @@ dd {
     border-left: 0;
   }
 
-  .lcpl-provenance {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-    padding: 1rem 1.1rem;
-  }
-
   .bib-masthead,
   .bib-metrics-section,
-  .bib-section,
-  .bib-review-boundary {
+  .bib-section {
     padding: 1.1rem;
   }
 
-  .bib-boundary {
+  .bib-context {
     padding-left: 0.8rem;
   }
 
@@ -3507,12 +3258,6 @@ dd {
   .bib-before-after span {
     transform: rotate(90deg);
     text-align: center;
-  }
-
-  .bib-provenance {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-    padding: 1rem 1.1rem;
   }
 
   .resume-actions,

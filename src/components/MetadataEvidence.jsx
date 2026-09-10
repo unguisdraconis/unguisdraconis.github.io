@@ -35,7 +35,7 @@ export function MetadataEvidence({ evidence, projectId }) {
           </div>
           <div className="metadata-resource">
             <p>{evidence.resource}</p>
-            <p>{evidence.boundary}</p>
+            <p>{evidence.focus}</p>
           </div>
         </header>
 
@@ -69,7 +69,7 @@ export function MetadataEvidence({ evidence, projectId }) {
         </section>
 
         <section className="metadata-section" aria-labelledby={`${projectId}-xml`}>
-          <MetadataHeading id={`${projectId}-xml`}>Small XML evidence</MetadataHeading>
+          <MetadataHeading id={`${projectId}-xml`}>Selected XML structure</MetadataHeading>
           <div className="metadata-xml-grid">
             {evidence.excerpts.map((excerpt) => (
               <XmlExcerpt key={excerpt.title} excerpt={excerpt} />
@@ -100,28 +100,14 @@ export function MetadataEvidence({ evidence, projectId }) {
         </div>
 
         <section className="metadata-section" aria-labelledby={`${projectId}-path`}>
-          <MetadataHeading id={`${projectId}-path`}>Evidence path</MetadataHeading>
+          <MetadataHeading id={`${projectId}-path`}>Metadata process</MetadataHeading>
           <ol className="metadata-path">
-            {evidence.evidencePath.map((step) => (
+            {evidence.metadataProcess.map((step) => (
               <li key={step}>{step}</li>
             ))}
           </ol>
-          <p className="metadata-path-note">{evidence.evidencePathNote}</p>
         </section>
 
-        <aside className="metadata-limitations" aria-labelledby={`${projectId}-evidence-limits`}>
-          <h5 id={`${projectId}-evidence-limits`}>Evidence limits</h5>
-          <ul>
-            {evidence.limitations.map((limitation) => (
-              <li key={limitation}>{limitation}</li>
-            ))}
-          </ul>
-        </aside>
-
-        <footer className="metadata-provenance">
-          <span>Provenance</span>
-          <p>{evidence.provenance}</p>
-        </footer>
       </div>
       <figcaption id={captionId}>{evidence.caption}</figcaption>
     </figure>

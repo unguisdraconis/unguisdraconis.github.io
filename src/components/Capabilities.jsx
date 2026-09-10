@@ -7,7 +7,7 @@ export function Capabilities({ groups }) {
         number="02"
         id="capabilities-title"
         title="Capabilities"
-        introduction="Methods and technologies evidenced across the selected academic and portfolio work."
+        introduction="Methods and technologies used across the selected academic and portfolio projects."
       />
       <div className="capability-grid">
         {groups.map((group) => (
@@ -24,4 +24,3 @@ export function Capabilities({ groups }) {
     </section>
   )
 }
-

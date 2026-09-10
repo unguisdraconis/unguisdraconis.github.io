@@ -52,7 +52,6 @@ export function LcplEvidence({ evidence, projectId }) {
                 <div>
                   <h6>{stage.title}</h6>
                   <p>{stage.description}</p>
-                  {stage.note && <p className="lcpl-stage-note">{stage.note}</p>}
                 </div>
               </li>
             ))}
@@ -60,7 +59,7 @@ export function LcplEvidence({ evidence, projectId }) {
         </section>
 
         <section className="lcpl-section" aria-labelledby={`${projectId}-collaboration`}>
-          <LcplHeading id={`${projectId}-collaboration`}>Collaboration boundary</LcplHeading>
+          <LcplHeading id={`${projectId}-collaboration`}>Collaboration</LcplHeading>
           <div className="lcpl-collaboration-grid">
             {evidence.collaboration.map((group, index) => {
               const groupId = `${projectId}-collaboration-${index + 1}`
@@ -94,7 +93,7 @@ export function LcplEvidence({ evidence, projectId }) {
               </ul>
             </section>
             <section aria-labelledby={`${projectId}-outreach-planned`}>
-              <h6 id={`${projectId}-outreach-planned`}>Planned—not verified as completed</h6>
+              <h6 id={`${projectId}-outreach-planned`}>Planned outreach</h6>
               <ul>
                 {evidence.outreach.planned.map((item) => (
                   <li key={item}>{item}</li>
@@ -109,10 +108,6 @@ export function LcplEvidence({ evidence, projectId }) {
           <p>{evidence.dissemination}</p>
         </aside>
 
-        <footer className="lcpl-provenance">
-          <span>Evidence basis</span>
-          <p>{evidence.provenance}</p>
-        </footer>
       </div>
       <figcaption id={captionId}>{evidence.caption}</figcaption>
     </figure>

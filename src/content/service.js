@@ -1,6 +1,6 @@
 export const presentations = [
   {
-    type: 'Official listing · Sole listed poster author/presenter',
+    type: 'Listed by ALA as sole poster author and presenter',
     title:
       '1000 Libros: Small Libraries Serving Multilingual and Non-English-Speaking Populations (Poster 30)',
     venue: 'ALA Annual Conference · Diversity Fair Poster Session · Philadelphia',

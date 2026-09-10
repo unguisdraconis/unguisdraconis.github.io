@@ -48,7 +48,7 @@ export function Resume({ profile, resume }) {
         number="06"
         id="resume-title"
         title="Résumé"
-        introduction="A concise public professional summary. Detailed methods, evidence, and project boundaries remain in Selected Work."
+        introduction="A concise overview of experience, education, methods, selected work, and service."
       />
 
       <div className="resume-actions">
@@ -162,7 +162,6 @@ export function Resume({ profile, resume }) {
                   </li>
                 ))}
               </ul>
-              <p className="resume-note">Evidence and limitations appear in the portfolio case studies.</p>
             </section>
 
             <section className="resume-block" aria-labelledby="resume-presentation-service-title">

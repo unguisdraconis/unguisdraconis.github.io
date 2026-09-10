@@ -37,7 +37,7 @@ export function DatabaseEvidence({ evidence, projectId }) {
           <p className="database-framing">{evidence.framing}</p>
         </header>
 
-        <dl className="database-metrics" aria-label="Verified architecture counts">
+        <dl className="database-metrics" aria-label="Database architecture counts">
           {evidence.metrics.map((metric) => (
             <div key={metric.label}>
               <dt>{metric.label}</dt>
@@ -96,7 +96,7 @@ export function DatabaseEvidence({ evidence, projectId }) {
             </DatabaseHeading>
             <p>
               <strong>{evidence.referenceTotal}</strong> imported reference rows
-              <span>{evidence.referenceBoundary}</span>
+              <span>{evidence.referenceDescription}</span>
             </p>
           </div>
           <dl className="database-reference-counts">
@@ -112,9 +112,9 @@ export function DatabaseEvidence({ evidence, projectId }) {
           <p className="database-reference-note">{evidence.referenceRelationship}</p>
         </section>
 
-        <div className="database-audit-grid">
-          <section aria-labelledby={`${projectId}-integrity-audit`}>
-            <DatabaseHeading id={`${projectId}-integrity-audit`}>
+        <div className="database-detail-grid">
+          <section aria-labelledby={`${projectId}-integrity-check`}>
+            <DatabaseHeading id={`${projectId}-integrity-check`}>
               {evidence.integrity.label}
             </DatabaseHeading>
             <pre className="database-integrity-code">
@@ -123,35 +123,15 @@ export function DatabaseEvidence({ evidence, projectId }) {
             <p>{evidence.integrity.note}</p>
           </section>
 
-          <section aria-labelledby={`${projectId}-rules-boundary`}>
-            <DatabaseHeading id={`${projectId}-rules-boundary`}>
-              Intended-rule boundary
+          <section aria-labelledby={`${projectId}-implemented-rules`}>
+            <DatabaseHeading id={`${projectId}-implemented-rules`}>
+              Design and implementation
             </DatabaseHeading>
             <p>{evidence.rules}</p>
             <p className="database-gap-note">{evidence.implementationGap}</p>
           </section>
         </div>
 
-        <aside className="database-boundaries" aria-labelledby={`${projectId}-evidence-boundaries`}>
-          <DatabaseHeading id={`${projectId}-evidence-boundaries`}>
-            Evidence boundaries
-          </DatabaseHeading>
-          <div>
-            <section aria-labelledby={`${projectId}-ai-boundary`}>
-              <h6 id={`${projectId}-ai-boundary`}>AI-assisted test data</h6>
-              <p>{evidence.aiBoundary}</p>
-            </section>
-            <section aria-labelledby={`${projectId}-reference-provenance`}>
-              <h6 id={`${projectId}-reference-provenance`}>Reference-data provenance</h6>
-              <p>{evidence.provenance}</p>
-            </section>
-          </div>
-        </aside>
-
-        <footer className="database-evidence-basis">
-          <span>Evidence basis</span>
-          <p>{evidence.evidenceBasis}</p>
-        </footer>
       </div>
       <figcaption id={captionId}>{evidence.caption}</figcaption>
     </figure>

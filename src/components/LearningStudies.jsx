@@ -9,8 +9,8 @@ export function LearningStudies({ studies }) {
         <p className="studies-kicker">Development record · Selected studies</p>
         <h2 id="learning-studies-title">Learning &amp; Visualization Studies</h2>
         <p>
-          Compact studies retained to show experimentation, development over time, and the
-          judgment carried into later work.
+          Three compact studies trace experimentation, developing judgment, and lessons carried
+          into later work.
         </p>
       </header>
 
@@ -42,7 +42,7 @@ export function LearningStudies({ studies }) {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`${link.label} — ${study.title} (opens in a new tab)`}
+                      aria-label={`${link.label}, ${study.title} (opens in a new tab)`}
                     >
                       {link.label} <span aria-hidden="true">↗</span>
                     </a>

@@ -22,14 +22,14 @@ export function BibliographicEvidence({ evidence, projectId }) {
             <p className="bib-kicker">{evidence.kicker}</p>
             <h4 id={titleId}>{evidence.title}</h4>
           </div>
-          <div className="bib-boundary">
-            <p>{evidence.boundary.label}</p>
-            <p>{evidence.boundary.description}</p>
+          <div className="bib-context">
+            <p>{evidence.courseContext.label}</p>
+            <p>{evidence.courseContext.description}</p>
           </div>
         </header>
 
         <section className="bib-metrics-section" aria-labelledby={`${projectId}-dataset`}>
-          <BibliographicHeading id={`${projectId}-dataset`}>Dataset and row boundary</BibliographicHeading>
+          <BibliographicHeading id={`${projectId}-dataset`}>Dataset and working rows</BibliographicHeading>
           <dl className="bib-metrics">
             {evidence.metrics.map((metric) => (
               <div key={metric.label}>
@@ -79,7 +79,6 @@ export function BibliographicEvidence({ evidence, projectId }) {
                   </div>
                 ))}
               </dl>
-              <p>{evidence.doiNote}</p>
             </div>
           </div>
         </section>
@@ -134,7 +133,7 @@ export function BibliographicEvidence({ evidence, projectId }) {
           </section>
 
           <section className="bib-section" aria-labelledby={`${projectId}-examples`}>
-            <BibliographicHeading id={`${projectId}-examples`}>Bounded examples</BibliographicHeading>
+            <BibliographicHeading id={`${projectId}-examples`}>Transformation examples</BibliographicHeading>
             <div className="bib-example-list">
               {evidence.transformations.examples.map((example) => (
                 <section key={example.field} aria-labelledby={`${projectId}-${example.field.toLowerCase()}-example`}>
@@ -144,7 +143,6 @@ export function BibliographicEvidence({ evidence, projectId }) {
                     <span aria-hidden="true">→</span>
                     <code>{example.after}</code>
                   </p>
-                  <p>{example.note}</p>
                 </section>
               ))}
             </div>
@@ -162,7 +160,6 @@ export function BibliographicEvidence({ evidence, projectId }) {
                 </li>
               ))}
             </ol>
-            <p className="bib-service-note">{evidence.crossref.note}</p>
           </section>
 
           <section className="bib-section" aria-labelledby={`${projectId}-viaf`}>
@@ -180,36 +177,11 @@ export function BibliographicEvidence({ evidence, projectId }) {
           </section>
         </div>
 
-        <aside className="bib-review-boundary" aria-labelledby={`${projectId}-review-boundary`}>
-          <BibliographicHeading id={`${projectId}-review-boundary`}>Review boundary</BibliographicHeading>
-          <p>{evidence.reviewBoundary}</p>
-        </aside>
+        <section className="bib-section bib-reproducibility" aria-labelledby={`${projectId}-reproducibility`}>
+          <BibliographicHeading id={`${projectId}-reproducibility`}>Reproducibility</BibliographicHeading>
+          <p>{evidence.reproducibility}</p>
+        </section>
 
-        <div className="bib-notes-grid">
-          <section className="bib-section" aria-labelledby={`${projectId}-repeatability`}>
-            <BibliographicHeading id={`${projectId}-repeatability`}>Partial repeatability</BibliographicHeading>
-            <p>{evidence.repeatability.summary}</p>
-            <ul>
-              {evidence.repeatability.details.map((detail) => (
-                <li key={detail}>{detail}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section className="bib-section" aria-labelledby={`${projectId}-limits`}>
-            <BibliographicHeading id={`${projectId}-limits`}>Evidence limits</BibliographicHeading>
-            <ul>
-              {evidence.limitations.map((limitation) => (
-                <li key={limitation}>{limitation}</li>
-              ))}
-            </ul>
-          </section>
-        </div>
-
-        <footer className="bib-provenance">
-          <span>Evidence basis</span>
-          <p>{evidence.provenance}</p>
-        </footer>
       </div>
       <figcaption id={captionId}>{evidence.caption}</figcaption>
     </figure>

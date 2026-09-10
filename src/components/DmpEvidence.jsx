@@ -68,13 +68,10 @@ export function DmpEvidence({ evidence, projectId }) {
         <div className="evidence-split">
           <section className="evidence-section" aria-labelledby={`${projectId}-json`}>
             <EvidenceHeading id={`${projectId}-json`}>Machine-readable DMP</EvidenceHeading>
-            <p className="evidence-code-label">Sanitized structural excerpt</p>
+            <p className="evidence-code-label">Selected structural excerpt</p>
             <pre className="evidence-code">
               <code>{evidence.jsonExcerpt}</code>
             </pre>
-            <p className="evidence-small-note">
-              Derivative structure only—not the complete private source file or the full narrative plan.
-            </p>
           </section>
 
           <section className="evidence-section" aria-labelledby={`${projectId}-stewardship`}>
@@ -111,10 +108,6 @@ export function DmpEvidence({ evidence, projectId }) {
           <p className="evidence-policy-note">{evidence.repositoryNote}</p>
         </section>
 
-        <footer className="evidence-provenance">
-          <span>Provenance</span>
-          <p>{evidence.provenance}</p>
-        </footer>
       </div>
       <figcaption id={captionId}>{evidence.caption}</figcaption>
     </figure>

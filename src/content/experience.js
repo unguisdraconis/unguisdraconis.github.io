@@ -29,7 +29,7 @@ export const experience = [
     period: 'Spring 2024',
     resumeGroup: 'relevant',
     summary:
-      'Initiated and led a graduate practicum expanding an existing Spanish-language collection. Researched and organized title recommendations; worked with the director to order close to 100 books through a $1,000 library allocation; cataloged and processed materials in Atriuum under staff guidance; created a public LibGuide; improved OPAC and website discovery; and initiated the 1000 Libros donation campaign.',
+      'Initiated and led a graduate practicum to expand an existing Spanish-language collection. Researched titles, created a public LibGuide, improved OPAC and website discovery, and initiated the 1000 Libros campaign. Worked with the director to order close to 100 books through a $1,000 library allocation and cataloged and processed materials in Atriuum under staff guidance.',
   },
   {
     organization: 'Dancesport of Knoxville',

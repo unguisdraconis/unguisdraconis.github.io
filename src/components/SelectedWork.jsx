@@ -8,7 +8,7 @@ export function SelectedWork({ projects }) {
         number="01"
         id="selected-work-title"
         title="Selected Work"
-        introduction="Six evidence-rich projects spanning research-data planning, applied information service, standards-based metadata, data quality and reconciliation, relational information modeling, and accessible interactive visualization."
+        introduction="Six projects spanning research-data planning, applied information service, standards-based metadata, data quality and reconciliation, relational information modeling, and accessible interactive visualization."
       />
       <div className="project-list">
         {projects.map((project) => (
