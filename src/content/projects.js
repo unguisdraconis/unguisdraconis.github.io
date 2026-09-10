@@ -195,18 +195,6 @@ export const projects = [
       ],
       excerpts: [
         {
-          title: 'Selected structural excerpt',
-          code: `<metadata>
-  <idinfo>…</idinfo>
-  <dataqual>…</dataqual>
-  <spdoinfo>…</spdoinfo>
-  <spref>…</spref>
-  <eainfo>…</eainfo>
-  <distinfo>…</distinfo>
-  <metainfo>…</metainfo>
-</metadata>`,
-        },
-        {
           title: 'Bounding extent',
           code: `<bounding>
   <westbc>-67.946275</westbc>
@@ -243,7 +231,7 @@ export const projects = [
     narrative: [
       'For this course-guided 2026 OpenRefine exercise, I worked with a supplied sample of 1,001 DOAJ article-metadata records. The dataset, exercise sequence, and method choices were provided for the course.',
       'I inspected selected fields with facets, split multi-valued author cells, manually reviewed author-name cluster candidates, and applied GREL and regular-expression transformations. I also performed an ISSN-based Crossref journal-metadata lookup and requested VIAF Corporate Name candidates for Publisher strings through the third-party Conciliator service.',
-      'Three preserved OpenRefine project histories document selected transformations. Facets and live-service results cannot be recreated from those histories alone. Because the source dataset’s redistribution terms were not established, I present aggregate counts and selected workflow evidence rather than the records.',
+      'Three preserved OpenRefine project histories document selected transformations. Facets and live-service results cannot be recreated from those histories alone.',
     ],
     evidence: {
       type: 'bibliographic-workflow',
@@ -313,7 +301,7 @@ export const projects = [
       },
       viaf: {
         summary:
-          'Publisher strings were reconciled against VIAF Corporate Name candidates through Conciliator.',
+          'I queried VIAF Corporate Names through Conciliator and applied the bulk best-candidate option to the publisher results.',
         metrics: [
           {
             value: '965',
@@ -324,7 +312,7 @@ export const projects = [
             label: 'Rows left unmatched',
           },
         ],
-        note: 'The best candidates were not validated row by row.',
+        note: 'These mappings were not verified individually.',
       },
       caption:
         'Aggregate results and selected operations from the course-guided OpenRefine exercise.',
@@ -338,8 +326,8 @@ export const projects = [
     context: 'Academic database prototype',
     narrative: [
       'For this 2024 academic project, I designed and implemented a SQLite prototype for multilingual book-recommendation data. I translated documented business rules into an entity-relationship model and a schema built from core domain tables, composite-key junctions, and imported reference tables. The seven BOOK rows are sample records used to exercise the prototype.',
-      'The project report credits an external source for the language and country reference data and states that I used it with permission. I summarize those rows here rather than republishing them.',
-      'AI assisted with generating some test records, which the report identifies as inaccurate. I therefore describe the schema and aggregate counts rather than using those records as evidence.',
+      'The project report credits an external source for the language and country reference data and states that I used it with permission.',
+      'AI assisted with generating some test records, which the report identifies as inaccurate.',
     ],
     evidence: {
       type: 'database-architecture',
@@ -386,7 +374,7 @@ export const projects = [
       integrity: {
         label: 'Foreign-key check',
         code: 'PRAGMA foreign_key_check;\n→ 0 rows returned',
-        note: 'I ran this check during a later review of the preserved database, not during the original 2024 project. Zero returned rows indicate no reported foreign-key violations.',
+        note: 'A later check of the preserved database returned no foreign-key violations.',
       },
       rules:
         'The design documents 16 intended business rules, and the implemented database captures the principal entity and junction relationships.',

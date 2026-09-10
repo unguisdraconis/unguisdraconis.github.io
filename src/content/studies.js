@@ -8,7 +8,7 @@ export const studies = [
     notes: [
       {
         label: 'Analysis and sources',
-        text: 'I used LinkedIn–World Bank source-provided indicators and OWID-provided World Bank regional classifications for descriptive rankings and comparisons, exploratory OLS modeling, diagnostic reflection, and historical visualization experiments. I used the indicators as supplied, without additional normalization or aggregation. Because source licensing was unclear, I do not redistribute the data.',
+        text: 'I used LinkedIn–World Bank source-provided indicators and OWID-provided World Bank regional classifications for descriptive rankings and comparisons, exploratory OLS modeling, diagnostic reflection, and historical visualization experiments. I used the indicators as supplied, without additional normalization or aggregation.',
       },
       {
         label: 'Reflection',
@@ -29,7 +29,7 @@ export const studies = [
       },
       {
         label: 'AI contribution',
-        text: 'AI implemented much of the application and diagnostic code. Jeremiah developed the analysis and cleaning theory, diagnosed failures, directed normalization, validated results, and made the final visual and interpretive choices.',
+        text: 'AI implemented much of the application and diagnostic code. I developed the analysis and cleaning theory, diagnosed failures, directed normalization, validated results, and made the final visual and interpretive choices.',
       },
     ],
     links: [

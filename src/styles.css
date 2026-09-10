@@ -732,10 +732,6 @@ dd {
   gap: 0.8rem;
 }
 
-.metadata-xml-block:first-child {
-  grid-row: span 2;
-}
-
 .metadata-xml-block h6 {
   margin-top: 0;
   color: var(--copper-dark);
@@ -2368,10 +2364,6 @@ dd {
   .metadata-anatomy-list li:nth-child(even) {
     padding: 0.5rem 0;
     border-left: 0;
-  }
-
-  .metadata-xml-block:first-child {
-    grid-row: auto;
   }
 
   .evidence-table thead {

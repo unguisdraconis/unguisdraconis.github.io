@@ -62,7 +62,7 @@ export function MetadataEvidence({ evidence, projectId }) {
         </section>
 
         <section className="metadata-section" aria-labelledby={`${projectId}-xml`}>
-          <MetadataHeading id={`${projectId}-xml`}>Selected XML structure</MetadataHeading>
+          <MetadataHeading id={`${projectId}-xml`}>Selected XML fields</MetadataHeading>
           <div className="metadata-xml-grid">
             {evidence.excerpts.map((excerpt) => (
               <XmlExcerpt key={excerpt.title} excerpt={excerpt} />
