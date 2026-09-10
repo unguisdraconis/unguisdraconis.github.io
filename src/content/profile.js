@@ -14,8 +14,8 @@ export const profile = {
   contacts: [
     {
       label: "Email",
-      display: "king.information.science@gmail.com",
-      href: "mailto:king.information.science@gmail.com",
+      display: "king.info.science@gmail.com",
+      href: "mailto:king.info.science@gmail.com",
       external: false,
     },
     {
