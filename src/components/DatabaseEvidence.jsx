@@ -30,11 +30,7 @@ export function DatabaseEvidence({ evidence, projectId }) {
     >
       <div className="database-sheet">
         <header className="database-masthead">
-          <div>
-            <p className="database-kicker">{evidence.kicker}</p>
-            <h4 id={titleId}>{evidence.title}</h4>
-          </div>
-          <p className="database-framing">{evidence.framing}</p>
+          <h4 id={titleId}>{evidence.title}</h4>
         </header>
 
         <dl className="database-metrics" aria-label="Database architecture counts">

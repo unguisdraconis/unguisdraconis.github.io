@@ -60,7 +60,9 @@ export function DmpEvidence({ evidence, projectId }) {
 
         <div className="evidence-split">
           <section className="evidence-section" aria-labelledby={`${projectId}-json`}>
-            <EvidenceHeading id={`${projectId}-json`}>Selected DMP Roadmap JSON</EvidenceHeading>
+            <EvidenceHeading id={`${projectId}-json`}>
+              Selected output fields from the DMP Roadmap JSON
+            </EvidenceHeading>
             <pre className="evidence-code">
               <code>{evidence.jsonExcerpt}</code>
             </pre>

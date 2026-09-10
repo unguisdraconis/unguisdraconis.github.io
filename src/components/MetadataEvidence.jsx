@@ -29,14 +29,7 @@ export function MetadataEvidence({ evidence, projectId }) {
     >
       <div className="metadata-sheet">
         <header className="metadata-masthead">
-          <div>
-            <p className="metadata-kicker">{evidence.kicker}</p>
-            <h4 id={titleId}>{evidence.title}</h4>
-          </div>
-          <div className="metadata-resource">
-            <p>{evidence.resource}</p>
-            <p>{evidence.focus}</p>
-          </div>
+          <h4 id={titleId}>{evidence.title}</h4>
         </header>
 
         <div className="metadata-count" aria-label={`${evidence.nodeCount} ${evidence.nodeCountLabel}; ${evidence.uniqueCount}`}>
@@ -77,35 +70,13 @@ export function MetadataEvidence({ evidence, projectId }) {
           </div>
         </section>
 
-        <div className="metadata-notes-grid">
-          <section className="metadata-section" aria-labelledby={`${projectId}-decisions`}>
-            <MetadataHeading id={`${projectId}-decisions`}>Selected metadata decisions</MetadataHeading>
-            <ul>
-              {evidence.decisions.map((decision) => (
-                <li key={decision}>{decision}</li>
-              ))}
-            </ul>
-          </section>
-
-          <section className="metadata-section" aria-labelledby={`${projectId}-representation`}>
-            <MetadataHeading id={`${projectId}-representation`}>
-              Constraints, distribution & quality
-            </MetadataHeading>
-            <ul>
-              {evidence.representationNotes.map((note) => (
-                <li key={note}>{note}</li>
-              ))}
-            </ul>
-          </section>
-        </div>
-
-        <section className="metadata-section" aria-labelledby={`${projectId}-path`}>
-          <MetadataHeading id={`${projectId}-path`}>Metadata process</MetadataHeading>
-          <ol className="metadata-path">
-            {evidence.metadataProcess.map((step) => (
-              <li key={step}>{step}</li>
+        <section className="metadata-section metadata-decisions" aria-labelledby={`${projectId}-decisions`}>
+          <MetadataHeading id={`${projectId}-decisions`}>Selected metadata decisions</MetadataHeading>
+          <ul>
+            {evidence.decisions.map((decision) => (
+              <li key={decision}>{decision}</li>
             ))}
-          </ol>
+          </ul>
         </section>
 
       </div>

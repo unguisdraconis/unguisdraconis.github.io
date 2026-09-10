@@ -4,19 +4,15 @@ export const studies = [
     title: 'Talent Migration Data Storytelling in R',
     context: 'Formative academic visualization project · 2025',
     summary:
-      'A 2025 INSC 592 final project built independently in R Markdown during Jeremiah’s first formal training in data analysis and visualization. The topic was self-selected, and the work used neither starter code nor AI.',
+      'I built this INSC 592 final project independently in R Markdown during my first formal training in data analysis and visualization. I selected the topic and used neither starter code nor AI.',
     notes: [
       {
-        label: 'Methods',
-        text: 'Used LinkedIn–World Bank source-provided indicators and OWID-provided World Bank regional classifications for descriptive rankings and comparisons, exploratory OLS modeling, diagnostic reflection, and historical visualization experimentation.',
-      },
-      {
-        label: 'Context',
-        text: 'The exploratory analysis used the indicators as supplied, without additional normalization or aggregation. Because source licensing was unclear, the data are not redistributed.',
+        label: 'Analysis and sources',
+        text: 'I used LinkedIn–World Bank source-provided indicators and OWID-provided World Bank regional classifications for descriptive rankings and comparisons, exploratory OLS modeling, diagnostic reflection, and historical visualization experiments. I used the indicators as supplied, without additional normalization or aggregation. Because source licensing was unclear, I do not redistribute the data.',
       },
       {
         label: 'Reflection',
-        text: 'The project informed more deliberate choices about color, accessibility, and chart selection in later work. Its original rainbow palette and Sankey treatment remain visible as part of that development.',
+        text: 'Looking back, the project helped me make more deliberate choices about color, accessibility, and chart selection in later work.',
       },
     ],
   },
@@ -25,7 +21,7 @@ export const studies = [
     title: 'RSF Press-Freedom Data Study',
     context: '#30DayChartChallenge · Data interpretation and validation',
     summary:
-      'A press-freedom study that retains RSF source CSVs unchanged and performs runtime normalization and interpretation for an exploratory streamgraph.',
+      'A press-freedom study that retains RSF source CSVs unchanged and normalizes the data at runtime for a stacked-area chart as its primary presentation. A streamgraph remains available as an optional comparison.',
     notes: [
       {
         label: 'Interpretation',
