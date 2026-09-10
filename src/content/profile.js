@@ -3,7 +3,7 @@ export const profile = {
   descriptor:
     "Research Data Management · Digital Curation · Data Visualization",
   statement:
-    "I organize, document, analyze, and communicate complex information—building systems and visual tools that make data more discoverable, trustworthy, and usable.",
+    "I organize, document, analyze, and communicate complex information, building systems and visual tools that make data more FAIR, findable, accessible, interoperable, reusable.",
   metadata:
     "MS Information Sciences · Graduate Certificate in Research Data Management · East Tennessee / Remote",
   positioning:
