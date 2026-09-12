@@ -343,7 +343,7 @@ export const projects = [
     narrative: [
       "For this 2024 academic project, I designed and implemented a SQLite prototype for multilingual book-recommendation data. I translated documented business rules into an entity-relationship model and a schema built from core domain tables, composite-key junctions, and imported reference tables. The seven BOOK rows are sample records used to exercise the prototype.",
       "The project report credits an external source for the language and country reference data and states that I used it with permission.",
-      "AI assisted with generating some test records, which the report identifies as inaccurate.",
+      "AI was used to generate some test records for the prototype.",
     ],
     evidence: {
       type: "database-architecture",
